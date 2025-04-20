@@ -40,6 +40,7 @@ const Index = () => {
 '우리가교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
             </p>
           </div>
+          
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in mb-8">
             <Button asChild size="lg" className="bg-church-navy hover:bg-blue-900">
               <Link to="/worship">예배 정보</Link>
@@ -48,7 +49,8 @@ const Index = () => {
               <Link to="/about">교회 소개</Link>
             </Button>
           </div>
-          <p className="text-2xl md:text-3xl font-serif italic animate-fade-in drop-shadow-md text-church-gold">
+          
+          <p className="text-2xl md:text-3xl font-serif italic opacity-0 animate-[fadeIn_2s_ease-out_forwards_1s] drop-shadow-md text-church-gold">
             여호와로 인하여 기뻐하는 것이 너희의 힘이니라
           </p>
         </div>
@@ -135,7 +137,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
-                김은광 목사님과 ��승유 목사님이 ��끄는 우리가 교회의 
+                김은광 목사님과 승유 목사님이 끄는 우리가 교회의 
                 목회 비전과 사역을 소개합니다.
               </p>
               <Button asChild variant="outline" className="w-full">
