@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, Book, Users, MapPin, Phone } from "lucide-react";
@@ -23,7 +24,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "홈", path: "/", icon: <img src="/church-logo.png" className="h-5 w-5" alt="Logo" /> },
+    { name: "홈", path: "/", icon: null },
     { name: "예배", path: "/worship", icon: <Book className="h-5 w-5" /> },
     { name: "교회소개", path: "/about", icon: <Users className="h-5 w-5" /> },
     { name: "교회일정", path: "/events", icon: <Calendar className="h-5 w-5" /> },
@@ -51,7 +52,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`flex items-center space-x-1 ${
                   isScrolled ? "text-gray-700 hover:text-church-navy" : "text-white hover:text-church-gold drop-shadow-md"
-                } transition-colors`}
+                } transition-colors font-medium`}
               >
                 {link.icon}
                 <span>{link.name}</span>
@@ -66,6 +67,7 @@ const Navbar = () => {
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle Menu"
+              className={isScrolled ? "text-gray-700" : "text-white"}
             >
               <svg
                 className="w-6 h-6"
@@ -104,7 +106,7 @@ const Navbar = () => {
                 className="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:bg-gray-100 rounded-md"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {link.icon}
+                {link.icon || <div className="w-5 h-5" />}
                 <span>{link.name}</span>
               </Link>
             ))}
