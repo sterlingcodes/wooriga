@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -50,7 +51,7 @@ const Index = () => {
             </Button>
           </div>
           
-          <p className="text-2xl md:text-3xl font-serif italic opacity-0 animate-[fadeIn_2s_ease-out_forwards_1s] drop-shadow-md text-church-gold">
+          <p className="text-2xl md:text-3xl font-serif italic text-church-gold animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
             여호와로 인하여 기뻐하는 것이 너희의 힘이니라
           </p>
         </div>
