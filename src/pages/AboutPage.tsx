@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,7 +15,7 @@ const AboutPage = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero Section - update church name */}
       <section className="pt-24 pb-12 bg-church-navy text-white">
         <div className="container max-w-6xl mx-auto px-4 pt-10">
           <div className="flex items-center justify-center mb-6">
@@ -24,10 +23,10 @@ const AboutPage = () => {
               <Church className="h-10 w-10 text-church-gold" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">교회 소개</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4"><strong>우리가 교회</strong> 소개</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리가 교회는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 믿음의 공동체입니다.
+            <strong>우리가 교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 믿음의 공동체입니다.
           </p>
         </div>
       </section>
@@ -36,10 +35,10 @@ const AboutPage = () => {
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h2 className="text-3xl font-bold text-church-navy mb-4">우리가 교회에 오신 것을 환영합니다</h2>
+            <h2 className="text-3xl font-bold text-church-navy mb-4"><strong>우리가 교회</strong>에 오신 것을 환영합니다</h2>
             <div className="w-20 h-1 bg-church-gold mb-6"></div>
             <p className="text-lg text-gray-600 mb-6">
-              우리가 교회는 로스앤젤레스 지역 사회에 하나님의 사랑을 전하고, 예수 그리스도의 복음을 실천하기 위해 설립되었습니다.
+              <strong>우리가 교회</strong>는 로스앤젤레스 지역 사회에 하나님의 사랑을 전하고, 예수 그리스도의 복음을 실천하기 위해 설립되었습니다.
               저희 교회는 모든 사람을 환영하며, 함께 예배하고, 배우며, 성장하는 공동체를 만들어가고자 합니다.
             </p>
             <p className="text-lg text-gray-600">
@@ -63,7 +62,7 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">우리의 사명과 비전</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리가 교회는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하며, 지역 사회와 세상을 변화시키는 데 헌신합니다.
+            <strong>우리가 교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하며, 지역 사회와 세상을 변화시키는 데 헌신합니다.
           </p>
         </div>
 
@@ -116,7 +115,7 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">목회자 소개</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리가 교회를 이끄시는 목사님들을 소개합니다.
+            <strong>우리가 교회</strong>를 이끄시는 목사님들을 소개합니다.
           </p>
         </div>
 
@@ -127,7 +126,7 @@ const AboutPage = () => {
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2">김은광 목사 (대한예수교 장로회 합동)</h3>
                 <p className="text-gray-600">
-                  김은광 목사님은 우리가 교회의 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도들을 섬기고 계십니다.
+                  김은광 목사님은 <strong>우리가 교회</strong>의 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도들을 섬기고 계십니다.
                 </p>
               </div>
             </CardContent>
@@ -139,7 +138,7 @@ const AboutPage = () => {
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2">백승유 목사 (Southwestern Baptist)</h3>
                 <p className="text-gray-600">
-                  백승유 목사님은 우리가 교회의 목사님으로, 젊은 세대를 위한 사역에 헌신하고 계시며,
+                  백승유 목사님은 <strong>우리가 교회</strong>의 목사님으로, 젊은 세대를 위한 사역에 헌신하고 계시며,
                   새로운 아이디어와 열정으로 교회를 섬기고 계십니다.
                 </p>
               </div>
@@ -174,9 +173,9 @@ const AboutPage = () => {
         }}
       >
         <div className="container max-w-4xl mx-auto text-center p-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">우리가 교회와 함께하세요</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4"><strong>우리가 교회</strong>와 함께하세요</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            우리가 교회는 언제나 여러분을 환영합니다. 함께 예배하고, 배우며, 성장하는 공동체에 참여하세요.
+            <strong>우리가 교회</strong>는 언제나 여러분을 환영합니다. 함께 예배하고, 배우며, 성장하는 공동체에 참여하세요.
           </p>
           <Button asChild size="lg" className="bg-church-gold hover:bg-amber-600 text-white">
             <Link to="/contact">문의하기 <ArrowRight className="ml-2 h-4 w-4" /></Link>
