@@ -1,8 +1,10 @@
 
 import { useEffect, useState } from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const AnimatedCross = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     setIsVisible(true);
@@ -11,8 +13,8 @@ const AnimatedCross = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div 
-        className={`absolute left-1/2 -top-48 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
-        style={{ transform: 'scale(2.5)' }}
+        className={`absolute left-1/2 -top-32 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
+        style={{ transform: `scale(${isMobile ? 1.2 : 2.5})` }}
       >
         <div className="relative">
           {/* Vertical beam with enhanced 3D effect */}
@@ -39,3 +41,4 @@ const AnimatedCross = () => {
 };
 
 export default AnimatedCross;
+
