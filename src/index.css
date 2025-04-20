@@ -78,3 +78,13 @@
 .page-subheading {
   @apply text-xl text-gray-600 mb-8;
 }
+
+/* Add styles for the navigation links to make them more readable */
+.nav-link {
+  @apply text-white font-medium hover:text-church-gold drop-shadow-md;
+}
+
+/* Add semi-transparent overlay for the hero section */
+.hero-overlay {
+  @apply absolute inset-0 bg-black/40;
+}

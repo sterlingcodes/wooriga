@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Church, Phone, Mail, MapPin, Youtube } from "lucide-react";
 
@@ -13,12 +12,12 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <Church className="h-8 w-8 mr-2" />
               <div>
-                <h3 className="text-xl font-bold">우리 GA 교회</h3>
-                <p className="text-xs opacity-75">Woori GA Church</p>
+                <h3 className="text-xl font-bold">우리가 교회</h3>
+                <p className="text-xs opacity-75">WOORIGA CHURCH</p>
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              하나님의 사랑으로 세상을 섬기는 우리 GA 교회에 오신 것을 환영합니다.
+              하나님의 사랑으로 세상을 섬기는 우리가 교회에 오신 것을 환영합니다.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -62,25 +61,25 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 text-church-gold" />
                 <div>
-                  <p>LA 한인타운</p>
-                  <p className="text-gray-300">3240 Wilshire Blvd</p>
+                  <p>(구)에퀴터블/(현)cbb 은행 빌딩</p>
+                  <p className="text-gray-300">3435 Wilshire Blvd, Suite 570 (5층)</p>
                   <p className="text-gray-300">Los Angeles, CA 90010</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-church-gold" />
-                <p>(213) 675-6303</p>
+                <p>(323) 610-6989</p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-church-gold" />
-                <p>woorigachurch@gmail.com</p>
+                <p>woorigachurch.la@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-          <p>© {currentYear} 우리 GA 교회 (Woori GA Church). All rights reserved.</p>
+          <p>© {currentYear} 우리가 교회 (WOORIGA CHURCH). All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -37,10 +37,10 @@ const Navbar = () => {
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <Church className="h-8 w-8 text-church-navy mr-2" />
+            <Church className={`h-8 w-8 ${isScrolled ? "text-church-navy" : "text-white"} mr-2`} />
             <div>
-              <h1 className="text-xl font-bold text-church-navy">우리 GA 교회</h1>
-              <p className="text-xs text-gray-500">Woori GA Church</p>
+              <h1 className={`text-xl font-bold ${isScrolled ? "text-church-navy" : "text-white"}`}>우리가 교회</h1>
+              <p className={`text-xs ${isScrolled ? "text-gray-500" : "text-gray-200"}`}>WOORIGA CHURCH</p>
             </div>
           </Link>
 
@@ -50,7 +50,9 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="flex items-center space-x-1 text-gray-700 hover:text-church-navy transition-all"
+                className={`flex items-center space-x-1 ${
+                  isScrolled ? "text-gray-700 hover:text-church-navy" : "nav-link"
+                } transition-all`}
               >
                 {link.icon}
                 <span>{link.name}</span>

@@ -20,14 +20,15 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
         }}
       >
-        <div className="container max-w-4xl mx-auto text-center p-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
-            우리 GA 교회
+        <div className="hero-overlay" />
+        <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in drop-shadow-lg">
+            우리가 교회
           </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in">
+          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in drop-shadow-md">
             하나님의 사랑으로 섬기는 공동체
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
@@ -47,21 +48,21 @@ const Index = () => {
                 <Calendar className="h-6 w-6 mr-3 text-church-gold" />
                 <div>
                   <p className="font-bold">주일 예배</p>
-                  <p className="text-sm">매주 일요일 오전 11시</p>
+                  <p className="text-sm">1부 9:00am / 2부 11:00am</p>
                 </div>
               </div>
               <div className="flex items-center text-white">
                 <Book className="h-6 w-6 mr-3 text-church-gold" />
                 <div>
-                  <p className="font-bold">수요 예배</p>
-                  <p className="text-sm">매주 수요일 저녁 7시 30분</p>
+                  <p className="font-bold">금요 기도회</p>
+                  <p className="text-sm">매주 금요일 저녁 7:30</p>
                 </div>
               </div>
               <div className="flex items-center text-white">
                 <MapPin className="h-6 w-6 mr-3 text-church-gold" />
                 <div>
                   <p className="font-bold">교회 위치</p>
-                  <p className="text-sm">3240 Wilshire Blvd, Los Angeles</p>
+                  <p className="text-sm">3435 Wilshire Blvd, Suite 570</p>
                 </div>
               </div>
             </div>
