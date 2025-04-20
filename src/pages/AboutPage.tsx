@@ -1,8 +1,11 @@
+
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Calendar, Book, ArrowRight } from "lucide-react";
+import { MapPin, Calendar, Book, ArrowRight, Church } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -122,9 +125,9 @@ const AboutPage = () => {
           <Card className="bg-white shadow-md">
             <CardContent className="p-6">
               <div className="mb-4">
-                <h3 className="text-xl font-bold mb-2">김은광 목사</h3>
+                <h3 className="text-xl font-bold mb-2">김은광 목사 (대한예수교 장로회 합동)</h3>
                 <p className="text-gray-600">
-                  김은광 목사님은 우리가 교회의 담임 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도들을 섬기고 계십니다.
+                  김은광 목사님은 우리가 교회의 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도들을 섬기고 계십니다.
                 </p>
               </div>
             </CardContent>
@@ -134,14 +137,31 @@ const AboutPage = () => {
           <Card className="bg-white shadow-md">
             <CardContent className="p-6">
               <div className="mb-4">
-                <h3 className="text-xl font-bold mb-2">백승유 목사</h3>
+                <h3 className="text-xl font-bold mb-2">백승유 목사 (Southwestern Baptist)</h3>
                 <p className="text-gray-600">
-                  백승유 목사님은 우리가 교회의 부목사님으로, 젊은 세대를 위한 사역에 헌신하고 계시며,
+                  백승유 목사님은 우리가 교회의 목사님으로, 젊은 세대를 위한 사역에 헌신하고 계시며,
                   새로운 아이디어와 열정으로 교회를 섬기고 계십니다.
                 </p>
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Serving Team Section */}
+      <section className="section-container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-church-navy mb-4">섬기는 분</h2>
+          <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
+        </div>
+
+        <div className="text-center max-w-4xl mx-auto text-gray-600">
+          <p className="mb-4">
+            정희경 전도사(새가족), 김폴 선교사(선교,시설),<br />
+            박크리스틴 집사(주일학교 디렉터) 허지애 간사(찬양)<br />
+            박종호, 김기전, 김윤성, ​이창록 장로<br />
+            후원선교: 임태호/이선화 선교사(태국). ​미​주복음방송
+          </p>
         </div>
       </section>
 
@@ -170,7 +190,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-import { Church } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
