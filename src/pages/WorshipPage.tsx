@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -65,12 +64,44 @@ const WorshipPage = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">수요 예배</h3>
-                  <p className="text-gray-600 mb-1">매주 수요일 저녁 7:30</p>
-                  <p className="text-gray-600">
-                    주중에 드리는 예배로, 말씀과 기도를 통해 
-                    영적 충전의 시간을 갖습니다.
-                  </p>
+                  <h3 className="text-xl font-bold mb-2">주일학교</h3>
+                  <p className="text-gray-600 mb-1">11:00am</p>
+                </div>
+              </div>
+
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">수요성경공부</h3>
+                  <p className="text-gray-600 mb-1">7:30pm - 문의요망</p>
+                </div>
+              </div>
+
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">금요기도회</h3>
+                  <p className="text-gray-600 mb-1">7:30pm</p>
+                </div>
+              </div>
+
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">젊은이 공동체 모임</h3>
+                  <p className="text-gray-600 mb-1">주일 1:00pm</p>
                 </div>
               </div>
             </div>
@@ -78,7 +109,7 @@ const WorshipPage = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
               alt="예배 모습"
               className="w-full h-auto rounded-lg shadow-lg mb-6"
             />
@@ -88,16 +119,14 @@ const WorshipPage = () => {
                 <MapPin className="h-5 w-5 text-church-gold mr-3 mt-1" />
                 <div>
                   <p className="font-bold">예배 장소</p>
-                  <p>우리가 교회 본당</p>
-                  <p>3240 Wilshire Blvd, Los Angeles, CA 90010</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <Calendar className="h-5 w-5 text-church-gold mr-3 mt-1" />
-                <div>
-                  <p className="font-bold">특별 예배 안내</p>
-                  <p>명절 및 특별 행사 시 별도 공지</p>
+                  <p>(구)에퀴터블/(현)cbb 은행 빌딩</p>
+                  <p>3435 Wilshire Blvd, Suite 570 (5층)</p>
+                  <p>Los Angeles, CA 90010</p>
+                  <div className="mt-2">
+                    <p className="font-bold">파킹:</p>
+                    <p>-에퀴터블 빌딩 파킹 free</p>
+                    <p>교회에서 밸리데이션을 받으시면 됩니다.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,7 +154,7 @@ const WorshipPage = () => {
                   전통 찬송가를 통해 모든 세대가 함께 참여할 수 있는 찬양을 드립니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1476868788174-0bd4df2aa74e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="찬양"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -140,7 +169,7 @@ const WorshipPage = () => {
                   일상에 적용할 수 있는 실제적인 가르침을 제공합니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="말씀"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -155,71 +184,13 @@ const WorshipPage = () => {
                   하나님과의 깊은 교제를 경험합니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1492176273113-2d51f47b23b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="기도"
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Special Services */}
-      <section className="section-container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-church-navy mb-4">특별 예배</h2>
-          <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            정기 예배 외에도 다양한 특별 예배와 모임을 통해 
-            하나님과의 관계를 더욱 깊게 합니다
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="overflow-hidden transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="절기 예배"
-                className="w-full h-full object-cover transition-all hover:scale-105"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">절기 예배</h3>
-              <p className="text-gray-600 mb-4">
-                부활절, 성탄절, 추수감사절 등 기독교 절기에 
-                맞춰 특별한 예배를 드립니다.
-              </p>
-              <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>성탄 전야 예배 - 12월 24일</li>
-                <li>부활절 새벽 예배 - 부활절 당일</li>
-                <li>추수감사절 예배 - 11월 넷째 주 목요일</li>
-              </ul>
-            </CardContent>
-          </Card>
-          
-          <Card className="overflow-hidden transition-all hover:shadow-lg">
-            <div className="h-48 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="특별 기도회"
-                className="w-full h-full object-cover transition-all hover:scale-105"
-              />
-            </div>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2">특별 기도회</h3>
-              <p className="text-gray-600 mb-4">
-                교회와 성도들의 영적 성장을 위한 
-                특별 기도회를 정기적으로 개최합니다.
-              </p>
-              <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>신년 특별 기도회 - 1월 첫째 주</li>
-                <li>40일 특별 기도회 - 사순절 기간</li>
-                <li>금요 철야 기도회 - 매월 마지막 금요일</li>
-              </ul>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
@@ -251,10 +222,6 @@ const WorshipPage = () => {
                   <ArrowRight className="h-5 w-5 text-church-gold mr-2 mt-1" />
                   <span>수요 예배: 매주 수요일 저녁 7시 30분</span>
                 </li>
-                <li className="flex items-start">
-                  <ArrowRight className="h-5 w-5 text-church-gold mr-2 mt-1" />
-                  <span>특별 예배: 별도 공지</span>
-                </li>
               </ul>
               
               <div className="flex space-x-4">
@@ -267,19 +234,10 @@ const WorshipPage = () => {
                   <span>YouTube 채널</span>
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
-                <a 
-                  href="https://www.facebook.com/woorigachurch" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md inline-flex items-center transition-all"
-                >
-                  <span>Facebook 페이지</span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
               </div>
             </div>
             
-            <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden shadow-lg">
+            <div className="aspect-square w-full overflow-hidden shadow-lg rounded-lg">
               <iframe
                 src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
                 title="우리가 교회 YouTube Channel"
@@ -298,4 +256,3 @@ const WorshipPage = () => {
 };
 
 export default WorshipPage;
-
