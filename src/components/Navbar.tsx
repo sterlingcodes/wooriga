@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, Book, Users, MapPin, Phone } from "lucide-react";
@@ -37,7 +36,6 @@ const Navbar = () => {
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <img src="/church-logo.png" className="h-12 w-12 mr-2" alt="우리가 교회" />
             <div>
               <h1 className={`text-xl font-bold ${isScrolled ? "text-church-navy" : "text-white drop-shadow-md"}`}>우리가 교회</h1>
               <p className={`text-xs ${isScrolled ? "text-gray-500" : "text-white/90 drop-shadow-md"}`}>WOORIGA CHURCH</p>
