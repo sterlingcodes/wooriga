@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -60,7 +59,7 @@ const Index = () => {
         </div>
         
         {isMobile ? (
-          <div className="absolute bottom-0 left-0 right-0 mb-24 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
+          <div className="absolute bottom-0 left-0 right-0 mb-16 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
             <div className="container mx-auto px-4">
               <div className="flex flex-col space-y-4">
                 <div className="flex items-center text-white">
