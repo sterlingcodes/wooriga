@@ -1,9 +1,8 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Book, Calendar } from "lucide-react";
+import { Clock, Calendar, MapPin, ArrowRight } from "lucide-react";
 
 const WorshipPage = () => {
   useEffect(() => {
@@ -19,84 +18,283 @@ const WorshipPage = () => {
         <div className="container max-w-6xl mx-auto px-4 pt-10">
           <div className="flex items-center justify-center mb-6">
             <div className="h-20 w-20 rounded-full bg-white/10 flex items-center justify-center">
-              <Book className="h-10 w-10 text-church-gold" />
+              <Calendar className="h-10 w-10 text-church-gold" />
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">예배 안내</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리 GA 교회의 예배 시간과 설교 영상을 확인하세요
+            우리 GA 교회의 예배 시간과 장소를 안내해 드립니다
           </p>
         </div>
       </section>
 
-      {/* Worship Times */}
+      {/* Worship Times Section */}
       <section className="section-container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
-          <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            하나님께 영광을 돌리는 예배에 여러분을 초대합니다
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <Card className="bg-white shadow-md transition-all hover:shadow-lg">
-            <CardContent className="p-6">
-              <div className="h-16 w-16 rounded-full bg-church-navy/10 flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-church-navy" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
+            <div className="w-20 h-1 bg-church-gold mb-6"></div>
+            <p className="text-lg text-gray-600 mb-8">
+              우리 GA 교회는 매주 다양한 예배를 통해 하나님을 경배하고 
+              성도들이 영적으로 성장할 수 있는 기회를 제공합니다.
+            </p>
+            
+            <div className="space-y-6">
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Calendar className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">주일 예배</h3>
+                  <p className="text-gray-600 mb-1">매주 일요일 오전 11:00</p>
+                  <p className="text-gray-600">
+                    온 가족이 함께 드리는 예배로, 찬양과 말씀을 통해 
+                    하나님의 은혜를 경험하는 시간입니다.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-center mb-3">주일 예배</h3>
-              <div className="text-center">
-                <p className="text-gray-700 font-medium">매주 일요일</p>
-                <p className="text-church-navy font-bold text-lg">오전 11:00</p>
-                <p className="text-gray-500 mt-2">온라인 및 대면</p>
+              
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">수요 예배</h3>
+                  <p className="text-gray-600 mb-1">매주 수요일 저녁 7:30</p>
+                  <p className="text-gray-600">
+                    주중에 드리는 예배로, 말씀과 기도를 통해 
+                    영적 충전의 시간을 갖습니다.
+                  </p>
+                </div>
               </div>
-            </CardContent>
-          </Card>
+              
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
+                    <Clock className="h-6 w-6 text-church-navy" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">새벽 기도회</h3>
+                  <p className="text-gray-600 mb-1">화-토 오전 6:00</p>
+                  <p className="text-gray-600">
+                    말씀과 기도로 하루를 시작하며 하나님과 
+                    깊은 교제를 나누는 시간입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <Card className="bg-white shadow-md transition-all hover:shadow-lg">
-            <CardContent className="p-6">
-              <div className="h-16 w-16 rounded-full bg-church-navy/10 flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-church-navy" />
+          <div>
+            <img 
+              src="https://images.unsplash.com/photo-1507036066871-b7e8032b3dea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              alt="예배 모습"
+              className="w-full h-auto rounded-lg shadow-lg mb-6"
+            />
+            
+            <div className="bg-church-light-gray p-6 rounded-lg">
+              <div className="flex items-start mb-4">
+                <MapPin className="h-5 w-5 text-church-gold mr-3 mt-1" />
+                <div>
+                  <p className="font-bold">예배 장소</p>
+                  <p>우리 GA 교회 본당</p>
+                  <p>3240 Wilshire Blvd, Los Angeles, CA 90010</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-center mb-3">수요 예배</h3>
-              <div className="text-center">
-                <p className="text-gray-700 font-medium">매주 수요일</p>
-                <p className="text-church-navy font-bold text-lg">저녁 7:30</p>
-                <p className="text-gray-500 mt-2">온라인 및 대면</p>
+              
+              <div className="flex items-start">
+                <Calendar className="h-5 w-5 text-church-gold mr-3 mt-1" />
+                <div>
+                  <p className="font-bold">특별 예배 안내</p>
+                  <p>명절 및 특별 행사 시 별도 공지</p>
+                </div>
               </div>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-white shadow-md transition-all hover:shadow-lg">
-            <CardContent className="p-6">
-              <div className="h-16 w-16 rounded-full bg-church-navy/10 flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-church-navy" />
-              </div>
-              <h3 className="text-xl font-bold text-center mb-3">청년부 예배</h3>
-              <div className="text-center">
-                <p className="text-gray-700 font-medium">매주 금요일</p>
-                <p className="text-church-navy font-bold text-lg">저녁 8:00</p>
-                <p className="text-gray-500 mt-2">온라인 및 대면</p>
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Recent Sermons */}
+      {/* Worship Style Section */}
       <section className="py-16 bg-church-light-gray">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-church-navy mb-4">최근 설교</h2>
+            <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리 GA 교회의 최근 설교 영상을 시청하세요
+              우리 GA 교회는 전통과 현대가 조화된 예배를 통해 
+              모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">찬양</h3>
+                <p className="text-gray-600 mb-4">
+                  전통 찬송가와 현대 CCM을 조화롭게 사용하여 
+                  모든 세대가 함께 참여할 수 있는 찬양을 드립니다.
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="찬양"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">말씀</h3>
+                <p className="text-gray-600 mb-4">
+                  성경에 기반한 깊이 있는 말씀 선포를 통해 
+                  일상에 적용할 수 있는 실제적인 가르침을 제공합니다.
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="말씀"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">기도</h3>
+                <p className="text-gray-600 mb-4">
+                  개인과 공동체를 위한 중보기도를 통해 
+                  하나님과의 깊은 교제를 경험합니다.
+                </p>
+                <img 
+                  src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="기도"
+                  className="w-full h-40 object-cover rounded-lg"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Special Services */}
+      <section className="section-container">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-church-navy mb-4">특별 예배</h2>
+          <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            정기 예배 외에도 다양한 특별 예배와 모임을 통해 
+            하나님과의 관계를 더욱 깊게 합니다
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="overflow-hidden transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="절기 예배"
+                className="w-full h-full object-cover transition-all hover:scale-105"
+              />
+            </div>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-2">절기 예배</h3>
+              <p className="text-gray-600 mb-4">
+                부활절, 성탄절, 추수감사절 등 기독교 절기에 
+                맞춰 특별한 예배를 드립니다.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 mb-4">
+                <li>성탄 전야 예배 - 12월 24일</li>
+                <li>부활절 새벽 예배 - 부활절 당일</li>
+                <li>추수감사절 예배 - 11월 넷째 주 목요일</li>
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <Card className="overflow-hidden transition-all hover:shadow-lg">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="특별 기도회"
+                className="w-full h-full object-cover transition-all hover:scale-105"
+              />
+            </div>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-2">특별 기도회</h3>
+              <p className="text-gray-600 mb-4">
+                교회와 성도들의 영적 성장을 위한 
+                특별 기도회를 정기적으로 개최합니다.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 mb-4">
+                <li>신년 특별 기도회 - 1월 첫째 주</li>
+                <li>40일 특별 기도회 - 사순절 기간</li>
+                <li>금요 철야 기도회 - 매월 마지막 금요일</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Online Worship */}
+      <section className="py-16 bg-church-navy text-white">
+        <div className="container max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">온라인 예배</h2>
+            <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
+            <p className="text-lg opacity-90 max-w-3xl mx-auto">
+              현장 예배에 참석하지 못하는 성도들을 위해 
+              온라인으로도 예배를 제공합니다
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">실시간 스트리밍</h3>
+              <p className="mb-4 opacity-90">
+                모든 주일 예배는 YouTube 채널을 통해 실시간으로 
+                스트리밍되며, 이후에도 다시 볼 수 있습니다.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-5 w-5 text-church-gold mr-2 mt-1" />
+                  <span>주일 예배: 매주 일요일 오전 11시</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-5 w-5 text-church-gold mr-2 mt-1" />
+                  <span>수요 예배: 매주 수요일 저녁 7시 30분</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-5 w-5 text-church-gold mr-2 mt-1" />
+                  <span>특별 예배: 별도 공지</span>
+                </li>
+              </ul>
+              
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md inline-flex items-center transition-all"
+                >
+                  <span>YouTube 채널</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+                <a 
+                  href="https://www.facebook.com/woorigachurch" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md inline-flex items-center transition-all"
+                >
+                  <span>Facebook 페이지</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+            
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
@@ -105,111 +303,6 @@ const WorshipPage = () => {
                 allowFullScreen
                 className="w-full h-full"
               ></iframe>
-            </div>
-            
-            <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-church-navy mb-4">설교 시리즈</h3>
-              <p className="text-gray-600 mb-6">
-                우리 GA 교회는 매주 하나님의 말씀을 중심으로 한 설교를 통해 
-                성도들의 영적 성장을 돕고 있습니다. 지난 설교를 통해 받은 
-                은혜와 감동을 다시 한번 경험해 보세요.
-              </p>
-              <p className="text-gray-600 mb-6">
-                모든 설교는 유튜브 채널을 통해 제공되며, 언제 어디서나 
-                하나님의 말씀을 들을 수 있습니다.
-              </p>
-              <div>
-                <a 
-                  href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-church-navy hover:text-church-gold transition-all font-medium"
-                >
-                  <span>더 많은 설교 보기</span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Worship Guide */}
-      <section className="section-container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-church-navy mb-4">예배 안내</h2>
-          <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리 GA 교회의 예배에 처음 참석하시는 분들을 위한 안내입니다
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-          <div>
-            <h3 className="text-2xl font-bold text-church-navy mb-4">예배 순서</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">1</div>
-                <div>
-                  <p className="font-medium">찬양</p>
-                  <p className="text-gray-600">하나님께 영광을 돌리는 찬양으로 예배를 시작합니다</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">2</div>
-                <div>
-                  <p className="font-medium">대표 기도</p>
-                  <p className="text-gray-600">교회와 성도들을 위한 대표 기도 시간입니다</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">3</div>
-                <div>
-                  <p className="font-medium">성경 봉독</p>
-                  <p className="text-gray-600">함께 하나님의 말씀을 읽는 시간입니다</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">4</div>
-                <div>
-                  <p className="font-medium">설교</p>
-                  <p className="text-gray-600">목사님의 말씀 선포를 통해 하나님의 뜻을 배웁니다</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">5</div>
-                <div>
-                  <p className="font-medium">헌금</p>
-                  <p className="text-gray-600">하나님께 감사의 마음을 표현하는 시간입니다</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-church-navy text-white flex items-center justify-center text-sm mr-3 mt-0.5">6</div>
-                <div>
-                  <p className="font-medium">축도</p>
-                  <p className="text-gray-600">하나님의 축복으로 예배를 마칩니다</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-2xl font-bold text-church-navy mb-4">새가족 안내</h3>
-            <p className="text-gray-600 mb-4">
-              우리 GA 교회에 처음 방문하시는 분들을 진심으로 환영합니다. 
-              예배 후 로비에 마련된 새가족 안내 데스크에서 교회에 대한 
-              자세한 정보를 얻으실 수 있습니다.
-            </p>
-            <p className="text-gray-600 mb-4">
-              온라인으로 예배에 참석하시는 분들은 YouTube 라이브 채팅을 통해 
-              문의하시면 친절히 안내해 드립니다.
-            </p>
-            <div className="bg-church-light-gray p-4 rounded-lg">
-              <h4 className="font-medium mb-2">문의사항</h4>
-              <p className="text-gray-600">
-                전화: (213) 675-6303<br />
-                이메일: woorigachurch@gmail.com
-              </p>
             </div>
           </div>
         </div>

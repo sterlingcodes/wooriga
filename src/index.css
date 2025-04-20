@@ -64,8 +64,11 @@
   @apply container max-w-6xl mx-auto px-4 py-16 md:py-24;
 }
 
+/* Fix circular dependency by directly applying the transition properties */
 .transition-all {
-  @apply transition-all duration-300 ease-in-out;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 .page-heading {
