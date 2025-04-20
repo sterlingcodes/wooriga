@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -24,7 +25,7 @@ const WorshipPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">예배 안내</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리 GA 교회의 예배 시간과 장소를 안내해 드립니다
+            우리가 교회의 예배 시간과 장소를 안내해 드립니다
           </p>
         </div>
       </section>
@@ -36,7 +37,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
             <div className="w-20 h-1 bg-church-gold mb-6"></div>
             <p className="text-lg text-gray-600 mb-8">
-              우리 GA 교회는 매주 다양한 예배를 통해 하나님을 경배하고 
+              우리가 교회는 매주 다양한 예배를 통해 하나님을 경배하고 
               성도들이 영적으로 성장할 수 있는 기회를 제공합니다.
             </p>
             
@@ -49,7 +50,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">주일 예배</h3>
-                  <p className="text-gray-600 mb-1">매주 일요일 오전 11:00</p>
+                  <p className="text-gray-600 mb-1">주일예배 9:00am(1부),11:00am(2부)</p>
                   <p className="text-gray-600">
                     온 가족이 함께 드리는 예배로, 찬양과 말씀을 통해 
                     하나님의 은혜를 경험하는 시간입니다.
@@ -72,28 +73,12 @@ const WorshipPage = () => {
                   </p>
                 </div>
               </div>
-              
-              <div className="flex">
-                <div className="mr-4">
-                  <div className="h-12 w-12 rounded-full bg-church-navy/10 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-church-navy" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">새벽 기도회</h3>
-                  <p className="text-gray-600 mb-1">화-토 오전 6:00</p>
-                  <p className="text-gray-600">
-                    말씀과 기도로 하루를 시작하며 하나님과 
-                    깊은 교제를 나누는 시간입니다.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1507036066871-b7e8032b3dea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
               alt="예배 모습"
               className="w-full h-auto rounded-lg shadow-lg mb-6"
             />
@@ -103,7 +88,7 @@ const WorshipPage = () => {
                 <MapPin className="h-5 w-5 text-church-gold mr-3 mt-1" />
                 <div>
                   <p className="font-bold">예배 장소</p>
-                  <p>우리 GA 교회 본당</p>
+                  <p>우리가 교회 본당</p>
                   <p>3240 Wilshire Blvd, Los Angeles, CA 90010</p>
                 </div>
               </div>
@@ -127,7 +112,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리 GA 교회는 전통과 현대가 조화된 예배를 통해 
+              우리가 교회는 전통과 현대가 조화된 예배를 통해 
               모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
@@ -137,8 +122,7 @@ const WorshipPage = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">찬양</h3>
                 <p className="text-gray-600 mb-4">
-                  전통 찬송가와 현대 CCM을 조화롭게 사용하여 
-                  모든 세대가 함께 참여할 수 있는 찬양을 드립니다.
+                  전통 찬송가를 통해 모든 세대가 함께 참여할 수 있는 찬양을 드립니다.
                 </p>
                 <img 
                   src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -156,7 +140,7 @@ const WorshipPage = () => {
                   일상에 적용할 수 있는 실제적인 가르침을 제공합니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="말씀"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -171,7 +155,7 @@ const WorshipPage = () => {
                   하나님과의 깊은 교제를 경험합니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="기도"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -295,10 +279,10 @@ const WorshipPage = () => {
               </div>
             </div>
             
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+            <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
-                title="우리 GA 교회 YouTube Channel"
+                title="우리가 교회 YouTube Channel"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"
@@ -314,3 +298,4 @@ const WorshipPage = () => {
 };
 
 export default WorshipPage;
+
