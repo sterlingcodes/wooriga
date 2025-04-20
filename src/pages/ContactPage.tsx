@@ -29,7 +29,6 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Here you would normally send the form data to a server
     console.log("Form submitted:", formData);
     
     toast({
@@ -37,7 +36,6 @@ const ContactPage = () => {
       description: "빠른 시일 내에 답변 드리겠습니다.",
     });
     
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -61,7 +59,7 @@ const ContactPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">연락처</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리 GA 교회에 문의하실 내용이 있으시면 언제든지 연락 주세요
+            <strong>우리가 교회</strong>에 문의하실 내용이 있으시면 언제든지 연락 주세요
           </p>
         </div>
       </section>

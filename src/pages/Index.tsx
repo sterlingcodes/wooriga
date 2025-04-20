@@ -36,8 +36,8 @@ const Index = () => {
               {`하나님께서는 우리를 성전 삼아주시고,
 성도라 부르셨습니다.
 성도는 교회를 다니는 것이 아니라,
-교회가 되어 가는 것입니다. 그래서 '<strong>우리가 교회</strong>' 입니다.
-'<strong>우리가교회</strong>'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
+교회가 되어 가는 것입니다. 그래서 '우리가 교회' 입니다.
+'우리가 교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
             </p>
           </div>
           
@@ -83,7 +83,7 @@ const Index = () => {
                 <MapPin className="h-6 w-6 mr-3 text-church-gold" />
                 <div>
                   <p className="font-bold">교회 위치</p>
-                  <p className="text-sm">3435 Wilshire Blvd, Suite 570</p>
+                  <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2">예배 안내</h3>
               <p className="text-gray-600 mb-4">
                 매주 주일 예배와 수요 예배에 여러분을 초대합니다. 
@@ -134,7 +134,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
                 김은광 목사님과 백승유 목사님이 이끄는 <strong>우리가 교회</strong>의 
@@ -157,7 +157,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6">
+            <CardContent className="p-6 flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2">교회 일정</h3>
               <p className="text-gray-600 mb-4">
                 <strong>우리가 교회</strong>의 다양한 일정과 행사에 대한 정보를 

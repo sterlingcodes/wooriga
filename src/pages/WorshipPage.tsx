@@ -152,11 +152,13 @@ const WorshipPage = () => {
                 <p className="text-gray-600 mb-4">
                   전통 찬송가와 현대 찬양을 통해 모든 세대가 마음을 다해 하나님께 찬양을 올려드립니다.
                 </p>
-                <img 
-                  src="/lovable-uploads/396fbe41-6d53-4c48-b10b-7778546b90da.png" 
-                  alt="찬양"
-                  className="w-full h-40 object-cover rounded-lg"
-                />
+                <div className="h-40 overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/396fbe41-6d53-4c48-b10b-7778546b90da.png" 
+                    alt="찬양"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
               </CardContent>
             </Card>
             
