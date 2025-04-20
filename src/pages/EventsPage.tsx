@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -197,7 +196,7 @@ const EventsPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">교회 달력</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리 GA 교회의 행사와 모임을 달력에서 확인하세요
+            <strong>우리가 교회</strong>의 행사와 모임을 달력에서 확인하세요
           </p>
         </div>
         
