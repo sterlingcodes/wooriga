@@ -109,7 +109,7 @@ const WorshipPage = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              src="/lovable-uploads/eb3107ca-04a4-4e84-8a70-c2459cbcaf31.png" 
               alt="예배 모습"
               className="w-full h-auto rounded-lg shadow-lg mb-6"
             />
@@ -141,8 +141,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리가 교회는 전통과 현대가 조화된 예배를 통해 
-              모든 세대가 함께 하나님을 경배합니다
+              우리가 교회는 전통과 현대가 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
           
@@ -151,10 +150,10 @@ const WorshipPage = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">찬양</h3>
                 <p className="text-gray-600 mb-4">
-                  전통 찬송가를 통해 모든 세대가 함께 참여할 수 있는 찬양을 드립니다.
+                  전통 찬송가와 현대 찬양을 통해 모든 세대가 마음을 다해 하나님께 찬양을 올려드립니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1476868788174-0bd4df2aa74e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/lovable-uploads/396fbe41-6d53-4c48-b10b-7778546b90da.png" 
                   alt="찬양"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -165,8 +164,7 @@ const WorshipPage = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">말씀</h3>
                 <p className="text-gray-600 mb-4">
-                  성경에 기반한 깊이 있는 말씀 선포를 통해 
-                  일상에 적용할 수 있는 실제적인 가르침을 제공합니다.
+                  성경에 충실한 깊이 있는 말씀 선포를 통해 일상생활에 적용할 수 있는 실제적인 가르침을 전합니다.
                 </p>
                 <img 
                   src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -180,11 +178,10 @@ const WorshipPage = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">기도</h3>
                 <p className="text-gray-600 mb-4">
-                  개인과 공동체를 위한 중보기도를 통해 
-                  하나님과의 깊은 교제를 경험합니다.
+                  개인과 공동체를 위한 중보기도를 통해 하나님과의 친밀한 교제를 경험하며 영적 성장을 이루어 갑니다.
                 </p>
                 <img 
-                  src="https://images.unsplash.com/photo-1492176273113-2d51f47b23b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/lovable-uploads/dd97f985-89e6-4a96-8ae1-2a1377f6a8de.png" 
                   alt="기도"
                   className="w-full h-40 object-cover rounded-lg"
                 />
@@ -237,7 +234,7 @@ const WorshipPage = () => {
               </div>
             </div>
             
-            <div className="aspect-square w-full overflow-hidden shadow-lg rounded-lg">
+            <div className="aspect-square w-full max-w-[600px] mx-auto overflow-hidden shadow-lg rounded-lg">
               <iframe
                 src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
                 title="우리가 교회 YouTube Channel"
