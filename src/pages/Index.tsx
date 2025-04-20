@@ -111,7 +111,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6 flex flex-col justify-between h-full">
+            <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">예배 안내</h3>
               <p className="text-gray-600 mb-4">
                 매주 주일 예배와 수요 예배에 여러분을 초대합니다. 
@@ -134,7 +134,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6 flex flex-col justify-between h-full">
+            <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
                 김은광 목사님과 백승유 목사님이 이끄는 <strong>우리가 교회</strong>의 
@@ -157,7 +157,7 @@ const Index = () => {
                 className="w-full h-full object-cover transition-all hover:scale-105"
               />
             </div>
-            <CardContent className="p-6 flex flex-col justify-between h-full">
+            <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">교회 일정</h3>
               <p className="text-gray-600 mb-4">
                 <strong>우리가 교회</strong>의 다양한 일정과 행사에 대한 정보를 

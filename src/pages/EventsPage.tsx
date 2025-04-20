@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -134,7 +135,7 @@ const EventsPage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
             <Card className="bg-white shadow-md">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-church-navy mb-4">주일</h3>
