@@ -6,7 +6,6 @@ import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-reac
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedCross from "@/components/AnimatedCross";
-import AnimatedBackground from '@/components/AnimatedBackground';
 
 const Index = () => {
   useEffect(() => {
@@ -21,7 +20,9 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
         }}
       >
         <div className="hero-overlay" />

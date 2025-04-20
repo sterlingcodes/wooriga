@@ -13,8 +13,8 @@ const AnimatedCross = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div 
-        className={`absolute left-1/2 -top-32 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
-        style={{ transform: `scale(${isMobile ? 1.2 : 2.5})` }}
+        className={`absolute left-1/2 -top-24 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
+        style={{ transform: `scale(${isMobile ? 0.8 : 2.5})` }}
       >
         <div className="relative">
           {/* Vertical beam with enhanced 3D effect */}
@@ -41,4 +41,3 @@ const AnimatedCross = () => {
 };
 
 export default AnimatedCross;
-
