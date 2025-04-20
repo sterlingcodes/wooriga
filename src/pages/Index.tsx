@@ -6,6 +6,7 @@ import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-reac
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedCross from "@/components/AnimatedCross";
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 const Index = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Index = () => {
         }}
       >
         <div className="hero-overlay" />
+        <AnimatedBackground />
         <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">

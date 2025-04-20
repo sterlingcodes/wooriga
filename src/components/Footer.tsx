@@ -22,7 +22,7 @@ const Footer = () => {
                 href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-red-500 transition-colors"
+                className="hover:text-red-500 transition-colors text-red-600"
               >
                 <Youtube className="h-6 w-6" />
               </a>
@@ -30,7 +30,7 @@ const Footer = () => {
                 href="https://www.instagram.com/woorigachurch/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-pink-500 transition-colors"
+                className="hover:text-pink-500 transition-colors text-pink-600"
               >
                 <Instagram className="h-6 w-6" />
               </a>
@@ -38,7 +38,7 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=100095332726987&locale=ko_KR" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-blue-500 transition-colors"
+                className="hover:text-blue-500 transition-colors text-blue-600"
               >
                 <Facebook className="h-6 w-6" />
               </a>
