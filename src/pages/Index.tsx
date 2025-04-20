@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -58,40 +59,77 @@ const Index = () => {
           </p>
         </div>
         
-        <div className={`absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent ${isMobile ? 'pb-16' : ''}`}>
-          <div className="container max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div className="flex items-center text-white">
-                <Calendar className="h-6 w-6 mr-3 text-church-gold" />
-                <div>
-                  <p className="font-bold">주일 예배</p>
-                  <p className="text-sm">1부 9:00am / 2부 11:00am</p>
+        {isMobile ? (
+          <div className="absolute bottom-0 left-0 right-0 mb-24 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-col space-y-4">
+                <div className="flex items-center text-white">
+                  <Calendar className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
+                  <div>
+                    <p className="font-bold">주일 예배</p>
+                    <p className="text-sm">1부 9:00am / 2부 11:00am</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center text-white">
-                <Book className="h-6 w-6 mr-3 text-church-gold" />
-                <div>
-                  <p className="font-bold">금요 기도회</p>
-                  <p className="text-sm">매주 금요일 저녁 7:30</p>
+                <div className="flex items-center text-white">
+                  <Book className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
+                  <div>
+                    <p className="font-bold">금요 기도회</p>
+                    <p className="text-sm">매주 금요일 저녁 7:30</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center text-white">
-                <Book className="h-6 w-6 mr-3 text-church-gold" />
-                <div>
-                  <p className="font-bold">수요 성경공부</p>
-                  <p className="text-sm">매주 수요일 7:30pm</p>
+                <div className="flex items-center text-white">
+                  <Book className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
+                  <div>
+                    <p className="font-bold">수요 성경공부</p>
+                    <p className="text-sm">매주 수요일 7:30pm</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center text-white">
-                <MapPin className="h-6 w-6 mr-3 text-church-gold" />
-                <div>
-                  <p className="font-bold">교회 위치</p>
-                  <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
+                <div className="flex items-center text-white">
+                  <MapPin className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
+                  <div>
+                    <p className="font-bold">교회 위치</p>
+                    <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <div className="absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent">
+            <div className="container max-w-6xl mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div className="flex items-center text-white">
+                  <Calendar className="h-6 w-6 mr-3 text-church-gold" />
+                  <div>
+                    <p className="font-bold">주일 예배</p>
+                    <p className="text-sm">1부 9:00am / 2부 11:00am</p>
+                  </div>
+                </div>
+                <div className="flex items-center text-white">
+                  <Book className="h-6 w-6 mr-3 text-church-gold" />
+                  <div>
+                    <p className="font-bold">금요 기도회</p>
+                    <p className="text-sm">매주 금요일 저녁 7:30</p>
+                  </div>
+                </div>
+                <div className="flex items-center text-white">
+                  <Book className="h-6 w-6 mr-3 text-church-gold" />
+                  <div>
+                    <p className="font-bold">수요 성경공부</p>
+                    <p className="text-sm">매주 수요일 7:30pm</p>
+                  </div>
+                </div>
+                <div className="flex items-center text-white">
+                  <MapPin className="h-6 w-6 mr-3 text-church-gold" />
+                  <div>
+                    <p className="font-bold">교회 위치</p>
+                    <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Welcome Section */}
