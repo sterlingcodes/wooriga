@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Calendar, MapPin, Book, Church, ArrowRight, Youtube } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MissionStatement from "@/components/MissionStatement";
 
 const Index = () => {
   useEffect(() => {
@@ -69,6 +69,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Mission Statement */}
+      <MissionStatement />
 
       {/* Welcome Section */}
       <section className="section-container">
