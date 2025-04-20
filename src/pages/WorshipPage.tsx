@@ -24,7 +24,7 @@ const WorshipPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4"><strong>우리가 교회</strong> 예배 안내</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리가 교회의 예배 시간과 장소를 안내해 드립니다
+            <strong>우리가 교회</strong>의 예배 시간과 장소를 안내해 드립니다
           </p>
         </div>
       </section>

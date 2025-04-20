@@ -52,7 +52,7 @@ const EventsPage = () => {
       events: [
         { time: "9:00am(1부), 11:00am(2부)", title: "주일예배" },
         { time: "11:00am", title: "Sunday School" },
-        { time: "1:00pm", title: "젊은이모임" },
+        { time: "1:00pm", title: "점심 식사" },
         { time: "1:00pm", title: "소그룹" }
       ]
     },
@@ -148,7 +148,7 @@ const EventsPage = () => {
                     <p className="text-gray-500 text-sm">11:00am</p>
                   </li>
                   <li className="border-l-2 border-church-gold pl-3">
-                    <p className="font-medium">젊은이모임</p>
+                    <p className="font-medium">점심 식사</p>
                     <p className="text-gray-500 text-sm">1:00pm</p>
                   </li>
                   <li className="border-l-2 border-church-gold pl-3">
