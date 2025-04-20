@@ -135,7 +135,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
-                김은광 목사님과 백승유 목사님이 이끄는 우리가 교회의 
+                김은광 목사님과 ��승유 목사님이 이끄는 우리가 교회의 
                 목회 비전과 사역을 소개합니다.
               </p>
               <Button asChild variant="outline" className="w-full">
@@ -180,7 +180,7 @@ const Index = () => {
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           </div>
           
-          <div className="max-w-4xl mx-auto aspect-square overflow-hidden rounded-lg shadow-lg">
+          <div className="max-w-2xl mx-auto aspect-video overflow-hidden rounded-lg shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
               title="우리가 교회 YouTube Channel"

@@ -11,11 +11,11 @@ const AnimatedCross = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div 
-        className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-1000 ${isVisible ? 'opacity-10' : ''}`}
+        className={`absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-2000 ${isVisible ? 'opacity-20' : ''}`}
       >
         <div className="relative">
-          <div className="absolute w-1 h-40 bg-white left-1/2 -translate-x-1/2 rounded-full" />
-          <div className="absolute h-1 w-24 bg-white top-1/2 -translate-y-1/2 rounded-full" />
+          <div className="absolute w-2 h-64 bg-gray-100 left-1/2 -translate-x-1/2 rounded-full" />
+          <div className="absolute h-2 w-40 bg-gray-100 top-1/2 -translate-y-1/2 rounded-full" />
         </div>
       </div>
     </div>
