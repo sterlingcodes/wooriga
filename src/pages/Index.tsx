@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -37,7 +36,7 @@ const Index = () => {
 '우리가교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in mb-8">
             <Button asChild size="lg" className="bg-church-navy hover:bg-blue-900">
               <Link to="/worship">예배 정보</Link>
             </Button>
@@ -45,11 +44,14 @@ const Index = () => {
               <Link to="/about">교회 소개</Link>
             </Button>
           </div>
+          <p className="text-2xl md:text-3xl font-serif italic animate-fade-in drop-shadow-md">
+            여호와로 인하여 기뻐하는 것이 너희의 힘이니라
+          </p>
         </div>
         
         <div className="absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent">
           <div className="container max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div className="flex items-center text-white">
                 <Calendar className="h-6 w-6 mr-3 text-church-gold" />
                 <div>
@@ -62,6 +64,13 @@ const Index = () => {
                 <div>
                   <p className="font-bold">금요 기도회</p>
                   <p className="text-sm">매주 금요일 저녁 7:30</p>
+                </div>
+              </div>
+              <div className="flex items-center text-white">
+                <Book className="h-6 w-6 mr-3 text-church-gold" />
+                <div>
+                  <p className="font-bold">수요 성경공부</p>
+                  <p className="text-sm">매주 수요일 7:30pm</p>
                 </div>
               </div>
               <div className="flex items-center text-white">
@@ -167,7 +176,7 @@ const Index = () => {
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           </div>
           
-          <div className="aspect-w-16 aspect-h-9 max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg">
+          <div className="max-w-4xl mx-auto aspect-square overflow-hidden rounded-lg shadow-lg">
             <iframe
               src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
               title="우리가 교회 YouTube Channel"
