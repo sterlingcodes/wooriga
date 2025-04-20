@@ -46,7 +46,7 @@ const Index = () => {
               <Link to="/about">교회 소개</Link>
             </Button>
           </div>
-          <p className="text-2xl md:text-3xl font-serif italic animate-fade-in drop-shadow-md">
+          <p className="text-2xl md:text-3xl font-serif italic animate-fade-in drop-shadow-md text-church-gold">
             여호와로 인하여 기뻐하는 것이 너희의 힘이니라
           </p>
         </div>
