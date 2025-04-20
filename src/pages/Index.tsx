@@ -137,7 +137,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
-                김은광 목사님과 승유 목사님이 이끄는 <strong>우리가 교회</strong>의 
+                김은광 목사님과 백승유 목사님이 이끄는 <strong>우리가 교회</strong>의 
                 목회 비전과 사역을 소개합니다.
               </p>
               <Button asChild variant="outline" className="w-full">

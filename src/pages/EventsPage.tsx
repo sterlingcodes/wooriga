@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -51,29 +50,23 @@ const EventsPage = () => {
     {
       day: "주일",
       events: [
-        { time: "오전 11:00", title: "주일 예배" },
-        { time: "오후 1:00", title: "주일 식사 교제" },
-        { time: "오후 2:00", title: "주일 성경 공부" }
+        { time: "9:00am(1부), 11:00am(2부)", title: "주일예배" },
+        { time: "11:00am", title: "Sunday School" },
+        { time: "1:00pm", title: "젊은이모임" },
+        { time: "1:00pm", title: "소그룹" }
       ]
     },
     {
       day: "수요일",
       events: [
-        { time: "저녁 7:30", title: "수요 예배" }
+        { time: "7:30pm", title: "수요성경공부" }
       ]
     },
     {
       day: "금요일",
       events: [
-        { time: "저녁 8:00", title: "청년부 예배" },
-        { time: "저녁 10:00", title: "청년부 교제" }
-      ]
-    },
-    {
-      day: "토요일",
-      events: [
-        { time: "오전 7:00", title: "새벽 기도회" },
-        { time: "오전 10:00", title: "중보 기도 모임" }
+        { time: "7:30pm", title: "금요기도회" },
+        { time: "7:30pm", title: "Sunday School" }
       ]
     }
   ];
@@ -93,7 +86,7 @@ const EventsPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">교회 일정</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            우리 GA 교회의 예정된 행사와 모임을 확인하세요
+            <strong>우리가 교회</strong>의 예정된 행사와 모임을 확인하세요
           </p>
         </div>
       </section>
@@ -104,7 +97,7 @@ const EventsPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">다가오는 행사</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리 GA 교회의 특별 행사와 모임에 여러분을 초대합니다
+            <strong>우리가 교회</strong>의 특별 행사와 모임에 여러분을 초대합니다
           </p>
         </div>
         
@@ -137,26 +130,62 @@ const EventsPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">정기 일정</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리 GA 교회의 매주 정기적으로 진행되는 모임 일정입니다
+              <strong>우리가 교회</strong>의 매주 정기적으로 진행되는 모임 일정입니다
             </p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {weeklyEvents.map((daySchedule) => (
-              <Card key={daySchedule.day} className="bg-white shadow-md">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-church-navy mb-4">{daySchedule.day}</h3>
-                  <ul className="space-y-3">
-                    {daySchedule.events.map((event, index) => (
-                      <li key={index} className="border-l-2 border-church-gold pl-3">
-                        <p className="font-medium">{event.title}</p>
-                        <p className="text-gray-500 text-sm">{event.time}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-church-navy mb-4">주일</h3>
+                <ul className="space-y-3">
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">주일예배</p>
+                    <p className="text-gray-500 text-sm">9:00am(1부), 11:00am(2부)</p>
+                  </li>
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">Sunday School</p>
+                    <p className="text-gray-500 text-sm">11:00am</p>
+                  </li>
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">젊은이모임</p>
+                    <p className="text-gray-500 text-sm">1:00pm</p>
+                  </li>
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">소그룹</p>
+                    <p className="text-gray-500 text-sm">1:00pm</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-church-navy mb-4">수요일</h3>
+                <ul className="space-y-3">
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">수요성경공부</p>
+                    <p className="text-gray-500 text-sm">7:30pm</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-md">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-church-navy mb-4">금요일</h3>
+                <ul className="space-y-3">
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">금요기도회</p>
+                    <p className="text-gray-500 text-sm">7:30pm</p>
+                  </li>
+                  <li className="border-l-2 border-church-gold pl-3">
+                    <p className="font-medium">Sunday School</p>
+                    <p className="text-gray-500 text-sm">7:30pm</p>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

@@ -36,7 +36,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
             <div className="w-20 h-1 bg-church-gold mb-6"></div>
             <p className="text-lg text-gray-600 mb-8">
-              우리가 교회는 매주 다양한 예배를 통해 하나님을 경배하고 
+              <strong>우리가 교회</strong>는 매주 다양한 예배를 통해 하나님을 경배하고 
               성도들이 영적으로 성장할 수 있는 기회를 제공합니다.
             </p>
             
