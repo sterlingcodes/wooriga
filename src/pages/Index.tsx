@@ -6,8 +6,11 @@ import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-reac
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedCross from "@/components/AnimatedCross";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,7 +58,7 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent">
+        <div className={`absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent ${isMobile ? 'pb-16' : ''}`}>
           <div className="container max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div className="flex items-center text-white">
