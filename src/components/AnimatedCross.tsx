@@ -15,7 +15,7 @@ const AnimatedCross = () => {
         className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
         style={{ 
           transform: `translate(-50%, -50%) scale(${isMobile ? 1.2 : 2.5})`,
-          top: isMobile ? '15%' : '5%'
+          top: isMobile ? '15%' : '3%'
         }}
       >
         <div className="relative">
