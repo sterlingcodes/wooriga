@@ -103,7 +103,7 @@ const LocationPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">주변 환경</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            우리 GA 교회 주변의 편의 시설 및 랜드마크
+            <strong>우리가 교회</strong> 주변의 편의 시설 및 랜드마크
           </p>
         </div>
         

@@ -126,7 +126,8 @@ const AboutPage = () => {
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2">김은광 목사 (대한예수교 장로회 합동)</h3>
                 <p className="text-gray-600">
-                  김은광 목사님은 <strong>우리가 교회</strong>의 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도��을 섬기고 계십니다.
+                  김은광 목사님은 <strong>우리가 교회</strong>의 목사님으로, 깊이 있는 설교와 따뜻한 마음으로 성도들을 정성껏 섬기고 계십니다. 
+                  성경에 충실한 가르침과 진실된 신앙 생활로 교회 공동체를 이끌어 가고 있습니다.
                 </p>
               </div>
             </CardContent>
@@ -138,8 +139,8 @@ const AboutPage = () => {
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-2">백승유 목사 (Southwestern Baptist)</h3>
                 <p className="text-gray-600">
-                  백승유 목사님은 <strong>우리가 교회</strong>의 목사님으로, 젊은 세대를 위한 사역에 헌신하고 계시며,
-                  새로운 아이디어와 열정으로 교회를 섬기고 계십니다.
+                  백승유 목사님은 <strong>우리가 교회</strong>의 목사님으로, 은혜로운 예배 인도와 찬양 리더십으로 성도들의 예배를 풍성하게 이끌고 계십니다. 
+                  젊은 세대를 위한 사역에 헌신하시며, 새로운 아이디어와 열정적인 찬양으로 교회의 영적 분위기를 고양시키고 계십니다.
                 </p>
               </div>
             </CardContent>

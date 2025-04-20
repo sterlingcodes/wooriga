@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -76,8 +75,7 @@ const ContactPage = () => {
                 <Phone className="h-8 w-8 text-church-navy" />
               </div>
               <h3 className="text-xl font-bold mb-3">전화</h3>
-              <p className="text-gray-600 mb-2">궁금한 점이 있으시면 전화주세요</p>
-              <p className="text-church-navy font-medium text-lg">(213) 675-6303</p>
+              <p className="text-church-navy font-medium text-lg">(323) 610-6989</p>
             </CardContent>
           </Card>
           
@@ -87,7 +85,6 @@ const ContactPage = () => {
                 <Mail className="h-8 w-8 text-church-navy" />
               </div>
               <h3 className="text-xl font-bold mb-3">이메일</h3>
-              <p className="text-gray-600 mb-2">이메일로 문의해 주세요</p>
               <p className="text-church-navy font-medium text-lg">woorigachurch@gmail.com</p>
             </CardContent>
           </Card>
@@ -98,8 +95,7 @@ const ContactPage = () => {
                 <MapPin className="h-8 w-8 text-church-navy" />
               </div>
               <h3 className="text-xl font-bold mb-3">주소</h3>
-              <p className="text-gray-600 mb-2">우리 교회를, 방문해 주세요</p>
-              <p className="text-church-navy font-medium">3240 Wilshire Blvd</p>
+              <p className="text-church-navy font-medium">3435 Wilshire Blvd, Suite 570 (5층)</p>
               <p className="text-church-navy font-medium">Los Angeles, CA 90010</p>
             </CardContent>
           </Card>
@@ -180,7 +176,7 @@ const ContactPage = () => {
           
           <div className="rounded-lg overflow-hidden shadow-lg h-full">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8583366052336!2d-118.30894742426193!3d34.06120727343767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b883af6bdfad%3A0x4e80285596ac0b86!2s3240%20Wilshire%20Blvd%2C%20Los%20Angeles%2C%20CA%2090010!5e0!3m2!1sen!2sus!4v1716456720064!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.858336605234!2d-118.30894742426193!3d34.06120727343767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b883af6bdfad%3A0x4e80285596ac0b86!2s3435%20Wilshire%20Blvd%20Suite%20570%2C%20Los%20Angeles%2C%20CA%2090010!5e0!3m2!1sen!2sus!4v1716456720064!5m2!1sen!2sus"
               width="100%" 
               height="100%" 
               style={{ border: 0, minHeight: "400px" }} 
@@ -189,52 +185,6 @@ const ContactPage = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="Church Location Map"
             ></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* Office Hours */}
-      <section className="py-16 bg-church-light-gray">
-        <div className="container max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-church-navy mb-4">교회 사무실 운영 시간</h2>
-            <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리 GA 교회 사무실 운영 시간을 확인하세요
-            </p>
-          </div>
-          
-          <div className="max-w-xl mx-auto bg-white rounded-lg shadow-md p-6">
-            <div className="space-y-4">
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">월요일</span>
-                <span>오전 9:00 - 오후 5:00</span>
-              </div>
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">화요일</span>
-                <span>오전 9:00 - 오후 5:00</span>
-              </div>
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">수요일</span>
-                <span>오전 9:00 - 오후 8:00</span>
-              </div>
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">목요일</span>
-                <span>오전 9:00 - 오후 5:00</span>
-              </div>
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">금요일</span>
-                <span>오전 9:00 - 오후 8:00</span>
-              </div>
-              <div className="flex justify-between pb-2 border-b border-gray-200">
-                <span className="font-medium">토요일</span>
-                <span>오전 10:00 - 오후 2:00</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="font-medium">일요일</span>
-                <span>오전 9:00 - 오후 1:00</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
