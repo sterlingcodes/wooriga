@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -34,25 +33,17 @@ const LocationPage = () => {
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <h2 className="text-3xl font-bold text-church-navy mb-4">교회 위치</h2>
+            <h2 className="text-3xl font-bold text-church-navy mb-4">오시는 길</h2>
             <div className="w-20 h-1 bg-church-gold mb-6"></div>
             
             <div className="mb-6">
               <div className="flex items-start mb-4">
                 <MapPin className="h-5 w-5 text-church-gold mr-3 mt-1" />
                 <div>
-                  <p className="font-bold text-lg">우리 GA 교회</p>
-                  <p>3240 Wilshire Blvd</p>
+                  <p className="font-bold text-lg">우리가 교회</p>
+                  <p>(구)에퀴터블/(현)cbb 은행 빌딩</p>
+                  <p>3435 Wilshire Blvd, Suite 570 (5층)</p>
                   <p>Los Angeles, CA 90010</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start mb-4">
-                <Clock className="h-5 w-5 text-church-gold mr-3 mt-1" />
-                <div>
-                  <p className="font-bold">예배 시간</p>
-                  <p>주일 예배: 오전 11:00</p>
-                  <p>수요 예배: 저녁 7:30</p>
                 </div>
               </div>
             </div>
@@ -61,10 +52,13 @@ const LocationPage = () => {
               <div>
                 <h3 className="text-xl font-bold mb-3">주차 안내</h3>
                 <p className="text-gray-600 mb-2">
-                  교회 건물 지하 주차장을 이용하실 수 있습니다. 
-                  추가 주차는 건물 뒤편 주차장을 이용해 주세요.
+                  에퀴터블 빌딩 파킹 free
+                </p>
+                <p className="text-gray-600">
+                  교회에서 밸리데이션을 받으시면 됩니다.
                 </p>
               </div>
+
               
               <div>
                 <h3 className="text-xl font-bold mb-3">대중교통 이용 시</h3>
@@ -89,7 +83,7 @@ const LocationPage = () => {
           <div className="h-full">
             <div className="rounded-lg overflow-hidden shadow-lg h-full">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8583366052336!2d-118.30894742426193!3d34.06120727343767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b883af6bdfad%3A0x4e80285596ac0b86!2s3240%20Wilshire%20Blvd%2C%20Los%20Angeles%2C%20CA%2090010!5e0!3m2!1sen!2sus!4v1716456720064!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.858336605234!2d-118.30894742426193!3d34.06120727343767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b883af6bdfad%3A0x4e80285596ac0b86!2s3435%20Wilshire%20Blvd%2C%20Los%20Angeles%2C%20CA%2090010!5e0!3m2!1sen!2sus!4v1716456720064!5m2!1sen!2sus"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, minHeight: "400px" }} 

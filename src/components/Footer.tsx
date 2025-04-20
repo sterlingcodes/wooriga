@@ -1,5 +1,6 @@
+
 import { Link } from "react-router-dom";
-import { Church, Phone, Mail, MapPin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Youtube, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center mb-4">
-              <Church className="h-8 w-8 mr-2" />
+              <img src="/church-logo.png" alt="우리가 교회" className="h-12 w-12 mr-2" />
               <div>
                 <h3 className="text-xl font-bold">우리가 교회</h3>
                 <p className="text-xs opacity-75">WOORIGA CHURCH</p>
@@ -24,9 +25,25 @@ const Footer = () => {
                 href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white hover:text-church-gold transition-all"
+                className="text-[#FF0000] hover:text-red-700 transition-colors"
               >
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-7 w-7" />
+              </a>
+              <a 
+                href="https://www.instagram.com/woorigachurch/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#E4405F] hover:text-pink-600 transition-colors"
+              >
+                <Instagram className="h-7 w-7" />
+              </a>
+              <a 
+                href="https://www.facebook.com/profile.php?id=100095332726987&locale=ko_KR" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#1877F2] hover:text-blue-600 transition-colors"
+              >
+                <Facebook className="h-7 w-7" />
               </a>
             </div>
           </div>

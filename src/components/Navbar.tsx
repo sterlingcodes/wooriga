@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Church, Calendar, Book, Users, MapPin, Phone } from "lucide-react";
+import { Calendar, Book, Users, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "홈", path: "/", icon: <Church className="h-5 w-5" /> },
+    { name: "홈", path: "/", icon: <img src="/church-logo.png" className="h-5 w-5" alt="Logo" /> },
     { name: "예배", path: "/worship", icon: <Book className="h-5 w-5" /> },
     { name: "교회소개", path: "/about", icon: <Users className="h-5 w-5" /> },
     { name: "교회일정", path: "/events", icon: <Calendar className="h-5 w-5" /> },
@@ -33,14 +32,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all ${isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-colors ${isScrolled ? "bg-white/95 shadow-md py-2" : "bg-transparent py-4"}`}>
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <Church className={`h-8 w-8 ${isScrolled ? "text-church-navy" : "text-white"} mr-2`} />
+            <img src="/church-logo.png" className="h-12 w-12 mr-2" alt="우리가 교회" />
             <div>
-              <h1 className={`text-xl font-bold ${isScrolled ? "text-church-navy" : "text-white"}`}>우리가 교회</h1>
-              <p className={`text-xs ${isScrolled ? "text-gray-500" : "text-gray-200"}`}>WOORIGA CHURCH</p>
+              <h1 className={`text-xl font-bold ${isScrolled ? "text-church-navy" : "text-white drop-shadow-md"}`}>우리가 교회</h1>
+              <p className={`text-xs ${isScrolled ? "text-gray-500" : "text-white/90 drop-shadow-md"}`}>WOORIGA CHURCH</p>
             </div>
           </Link>
 
@@ -51,8 +50,8 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`flex items-center space-x-1 ${
-                  isScrolled ? "text-gray-700 hover:text-church-navy" : "nav-link"
-                } transition-all`}
+                  isScrolled ? "text-gray-700 hover:text-church-navy" : "text-white hover:text-church-gold drop-shadow-md"
+                } transition-colors`}
               >
                 {link.icon}
                 <span>{link.name}</span>
