@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Calendar, MapPin, Book, Church, ArrowRight, Youtube } from "lucide-react";
+import { Calendar, MapPin, Book } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AnimatedCross from "@/components/AnimatedCross";
 
 const Index = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Index = () => {
         }}
       >
         <div className="hero-overlay" />
+        <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             우리가 교회
