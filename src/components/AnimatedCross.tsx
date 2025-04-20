@@ -11,22 +11,26 @@ const AnimatedCross = () => {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
       <div 
-        className={`absolute left-1/2 -top-24 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-20' : ''}`}
-        style={{ transform: 'scale(1.5)' }}
+        className={`absolute left-1/2 -top-48 -translate-x-1/2 opacity-0 transition-opacity duration-3000 ${isVisible ? 'opacity-25' : ''}`}
+        style={{ transform: 'scale(2.5)' }}
       >
         <div className="relative">
-          {/* Vertical beam with 3D effect */}
+          {/* Vertical beam with enhanced 3D effect */}
           <div className="absolute left-1/2 -translate-x-1/2">
-            <div className="w-8 h-[28rem] bg-church-navy rounded-md" />
-            <div className="absolute top-0 left-full w-2 h-[28rem] bg-opacity-30 bg-gray-500 rounded-r-md" />
-            <div className="absolute top-full left-0 w-8 h-2 bg-opacity-30 bg-gray-500 rounded-b-md" />
+            <div className="w-12 h-[32rem] bg-gradient-to-br from-church-navy to-purple-900 rounded-md shadow-lg" />
+            <div className="absolute top-0 left-full w-3 h-[32rem] bg-opacity-40 bg-gray-600 rounded-r-md" />
+            <div className="absolute top-full left-0 w-12 h-3 bg-opacity-40 bg-gray-600 rounded-b-md" />
+            {/* Inner glow effect */}
+            <div className="absolute inset-0 w-12 h-[32rem] bg-white bg-opacity-10 rounded-md filter blur-sm" />
           </div>
           
-          {/* Horizontal beam with 3D effect */}
-          <div className="absolute top-[6rem] left-1/2 -translate-x-1/2">
-            <div className="w-64 h-8 bg-church-navy rounded-md" />
-            <div className="absolute top-0 left-full w-2 h-8 bg-opacity-30 bg-gray-500 rounded-r-md" />
-            <div className="absolute top-full left-0 w-64 h-2 bg-opacity-30 bg-gray-500 rounded-b-md" />
+          {/* Horizontal beam with enhanced 3D effect */}
+          <div className="absolute top-[8rem] left-1/2 -translate-x-1/2">
+            <div className="w-80 h-12 bg-gradient-to-br from-church-navy to-purple-900 rounded-md shadow-lg" />
+            <div className="absolute top-0 left-full w-3 h-12 bg-opacity-40 bg-gray-600 rounded-r-md" />
+            <div className="absolute top-full left-0 w-80 h-3 bg-opacity-40 bg-gray-600 rounded-b-md" />
+            {/* Inner glow effect */}
+            <div className="absolute inset-0 w-80 h-12 bg-white bg-opacity-10 rounded-md filter blur-sm" />
           </div>
         </div>
       </div>

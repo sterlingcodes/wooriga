@@ -25,7 +25,6 @@ const Index = () => {
         }}
       >
         <div className="hero-overlay" />
-        <AnimatedBackground />
         <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
@@ -135,7 +134,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
-                김은광 목사님과 ��승유 목사님이 이끄는 우리가 교회의 
+                김은광 목사님과 ��승유 목사님이 ��끄는 우리가 교회의 
                 목회 비전과 사역을 소개합니다.
               </p>
               <Button asChild variant="outline" className="w-full">
