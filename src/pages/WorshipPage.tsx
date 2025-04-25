@@ -46,7 +46,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">주일 예배</h3>
-                  <p className="text-gray-600 mb-1">주일예배 9:00am(1부),11:00am(2부)</p>
+                  <p className="text-gray-600 mb-2">주일예배 9:00am(1부),11:00am(2부)</p>
                   <p className="text-gray-600">
                     온 가족이 함께 드리는 예배로, 찬양과 말씀을 통해 
                     하나님의 은혜를 경험하는 시간입니다.
@@ -62,7 +62,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">주일학교</h3>
-                  <p className="text-gray-600 mb-1">11:00am</p>
+                  <p className="text-gray-600 mb-2">11:00am</p>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">수요성경공부</h3>
-                  <p className="text-gray-600 mb-1">7:30pm - 문의요망</p>
+                  <p className="text-gray-600 mb-2">7:30pm - 문의요망</p>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">금요기도회</h3>
-                  <p className="text-gray-600 mb-1">7:30pm</p>
+                  <p className="text-gray-600 mb-2">7:30pm</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ const WorshipPage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">젊은이 공동체 모임</h3>
-                  <p className="text-gray-600 mb-1">주일 1:00pm</p>
+                  <p className="text-gray-600 mb-2">주일 1:00pm</p>
                 </div>
               </div>
             </div>
