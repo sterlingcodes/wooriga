@@ -1,12 +1,12 @@
-
 import React, { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useIsMobile } from "@/hooks/use-mobile";
+import HeroSection from "@/components/HeroSection";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -18,119 +18,8 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-
-      {/* Hero Section */}
-      <section 
-        className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
-        style={{ 
-          backgroundImage: "url('/lovable-uploads/d1654a35-4239-424d-ac42-35b18f1c9c6d.png')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover'
-        }}
-      >
-        <div className="absolute inset-0 bg-black/20" />
-        
-        <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
-            <strong>우리가교회</strong>
-          </h1>
-          <div className="mb-8 max-w-3xl mx-auto">
-            <p className="text-lg md:text-xl whitespace-pre-line animate-fade-in drop-shadow-md leading-relaxed">
-              {`하나님께서는 우리를 성전 삼아주시고,
-성도라 부르셨습니다.
-성도는 교회를 다니는 것이 아니라,
-교회가 되어 가는 것입니다. 그래서 '우리가교회' 입니다.
-'우리가교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
-            </p>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in mb-8">
-            <Button asChild size="lg" className="bg-church-navy hover:bg-blue-900">
-              <Link to="/worship">예배 정보</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-church-navy">
-              <Link to="/about">교회 소개</Link>
-            </Button>
-          </div>
-          
-          <p className="text-2xl md:text-3xl font-serif italic text-church-gold animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-            여호와로 인하여 기뻐하는 것이 너희의 힘이니라
-          </p>
-        </div>
-        
-        {isMobile ? (
-          <div className="absolute bottom-0 left-0 right-0 mb-16 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
-            <div className="container mx-auto px-4">
-              <div className="flex flex-col space-y-4">
-                <div className="flex items-center text-white">
-                  <Calendar className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
-                  <div>
-                    <p className="font-bold">주일 예배</p>
-                    <p className="text-sm">1부 9:00am / 2부 11:00am</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <Book className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
-                  <div>
-                    <p className="font-bold">금요 기도회</p>
-                    <p className="text-sm">매주 금요일 저녁 7:30</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <Book className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
-                  <div>
-                    <p className="font-bold">수요 성경공부</p>
-                    <p className="text-sm">매주 수요일 7:30pm</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <MapPin className="h-6 w-6 mr-3 text-church-gold flex-shrink-0" />
-                  <div>
-                    <p className="font-bold">교회 위치</p>
-                    <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black to-transparent">
-            <div className="container max-w-6xl mx-auto px-4">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div className="flex items-center text-white">
-                  <Calendar className="h-6 w-6 mr-3 text-church-gold" />
-                  <div>
-                    <p className="font-bold">주일 예배</p>
-                    <p className="text-sm">1부 9:00am / 2부 11:00am</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <Book className="h-6 w-6 mr-3 text-church-gold" />
-                  <div>
-                    <p className="font-bold">금요 기도회</p>
-                    <p className="text-sm">매주 금요일 저녁 7:30</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <Book className="h-6 w-6 mr-3 text-church-gold" />
-                  <div>
-                    <p className="font-bold">수요 성경공부</p>
-                    <p className="text-sm">매주 수요일 7:30pm</p>
-                  </div>
-                </div>
-                <div className="flex items-center text-white">
-                  <MapPin className="h-6 w-6 mr-3 text-church-gold" />
-                  <div>
-                    <p className="font-bold">교회 위치</p>
-                    <p className="text-sm">3435 Wilshire Blvd, Suite 570<br />Los Angeles, CA 90010</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </section>
-
+      <HeroSection />
+      
       {/* Welcome Section */}
       <section className="section-container">
         <div className="text-center mb-12">
