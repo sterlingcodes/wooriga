@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -9,7 +8,7 @@ const HeroSection = () => {
       <img
         src="/lovable-uploads/e790ef25-af09-4f25-b394-cbf98aface0c.png"
         alt="우리가교회 Hero"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover md:object-cover object-[-250px_center]"
       />
       <div className="absolute inset-0 bg-black/20" />
       
@@ -37,7 +36,7 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          <p className="text-2xl md:text-3xl font-serif italic text-church-gold animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
+          <p className="text-2xl md:text-3xl font-serif italic text-[#402a5f] animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
             여호와로 인하여 기뻐하는 것이 너희의 힘이니라
           </p>
         </div>

@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -84,7 +83,7 @@ const ContactPage = () => {
                 <Mail className="h-8 w-8 text-church-navy" />
               </div>
               <h3 className="text-xl font-bold mb-3">이메일</h3>
-              <p className="text-church-navy font-medium text-lg">woorigachurch@gmail.com</p>
+              <p className="text-church-navy font-medium text-lg">woorigachurch.la@gmail.com</p>
             </CardContent>
           </Card>
           
