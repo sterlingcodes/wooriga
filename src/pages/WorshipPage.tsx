@@ -138,7 +138,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              우리가���회는 전통과 현대가 조화롭게 어��러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
+              우리가교회는 전통과 현대가 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
           
