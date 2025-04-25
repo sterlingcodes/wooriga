@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,14 +21,18 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
+        className="relative h-screen flex items-center justify-center text-white" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')",
-          backgroundPosition: 'center',
-          backgroundSize: 'cover'
+          backgroundColor: "#333", // Fallback color
         }}
       >
-        <div className="hero-overlay" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')"
+          }}
+        ></div>
+        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-40" />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
