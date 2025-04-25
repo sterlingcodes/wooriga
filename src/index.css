@@ -86,5 +86,5 @@
 
 /* Add semi-transparent overlay for the hero section */
 .hero-overlay {
-  @apply absolute inset-0 bg-black/40;
+  @apply bg-black/40;
 }

@@ -22,17 +22,17 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="relative h-screen flex items-center justify-center text-white" 
-        style={{ 
-          backgroundColor: "#333", // Fallback color
-        }}
       >
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0"
           style={{
-            backgroundImage: "url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')"
+            backgroundImage: `url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
           }}
         ></div>
-        <div className="hero-overlay absolute inset-0 bg-black bg-opacity-40" />
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
@@ -61,6 +61,7 @@ const Index = () => {
           </p>
         </div>
         
+        {/* Service info section */}
         {isMobile ? (
           <div className="absolute bottom-0 left-0 right-0 mb-16 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
             <div className="container mx-auto px-4">
