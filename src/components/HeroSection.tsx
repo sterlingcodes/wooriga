@@ -14,7 +14,10 @@ const HeroSection = () => {
         src="/lovable-uploads/e790ef25-af09-4f25-b394-cbf98aface0c.png"
         alt="우리가교회 Hero"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: isMobile ? "70% center" : "center center" }}
+        style={{ 
+          objectPosition: isMobile ? "85% center" : "center center",
+          transform: isMobile ? "scale(1.2)" : "none"
+        }}
       />
       <div className="absolute inset-0 bg-black/20" />
       
