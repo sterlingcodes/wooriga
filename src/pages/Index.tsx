@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AnimatedCross from "@/components/AnimatedCross";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -23,13 +22,12 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')",
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}
       >
         <div className="hero-overlay" />
-        <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
