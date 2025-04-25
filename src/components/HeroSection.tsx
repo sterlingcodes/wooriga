@@ -1,14 +1,20 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
-    <section className="relative h-screen">
+    <section className="relative h-screen w-full overflow-hidden">
       <img
         src="/lovable-uploads/e790ef25-af09-4f25-b394-cbf98aface0c.png"
         alt="우리가교회 Hero"
-        className="absolute inset-0 w-full h-full object-cover md:object-cover object-[-250px_center]"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: isMobile ? "70% center" : "center center" }}
       />
       <div className="absolute inset-0 bg-black/20" />
       
