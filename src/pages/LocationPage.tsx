@@ -32,9 +32,9 @@ const LocationPage = () => {
       {/* Map Section */}
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div>
+          <div className="text-center md:text-center">
             <h2 className="text-3xl font-bold text-church-navy mb-4">오시는 길</h2>
-            <div className="w-20 h-1 bg-church-gold mb-6"></div>
+            <div className="w-20 h-1 bg-church-gold mb-6 mx-auto"></div>
             
             <div className="mb-6">
               <div className="flex items-start mb-4">

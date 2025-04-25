@@ -32,9 +32,9 @@ const WorshipPage = () => {
       {/* Worship Times Section */}
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div>
+          <div className="text-center md:text-center">
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
-            <div className="w-20 h-1 bg-church-gold mb-6"></div>
+            <div className="w-20 h-1 bg-church-gold mb-6 mx-auto"></div>
             <p className="text-lg text-gray-600 mb-8">
               <strong>우리가교회</strong>는 매주 다양한 예배를 통해 하나님을 경배하고 
               성도들이 영적으로 성장할 수 있는 기회를 제공합니다.

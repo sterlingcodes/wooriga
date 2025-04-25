@@ -34,9 +34,9 @@ const AboutPage = () => {
       {/* Welcome Section */}
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+          <div className="text-center md:text-center">
             <h2 className="text-3xl font-bold text-church-navy mb-4"><strong>우리가교회</strong>에 오신 것을 환영합니다</h2>
-            <div className="w-20 h-1 bg-church-gold mb-6"></div>
+            <div className="w-20 h-1 bg-church-gold mb-6 mx-auto"></div>
             <p className="text-lg text-gray-600 mb-6">
               <strong>우리가교회</strong>는 로스앤젤레스 지역 사회에 하나님의 사랑을 전하고, 예수 그리스도의 복음을 실천하기 위해 설립되었습니다.
               저희 교회는 모든 사람을 환영하며, 함께 예배하고, 배우며, 성장하는 공동체를 만들어가고자 합니다.
