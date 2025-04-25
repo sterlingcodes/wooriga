@@ -50,7 +50,7 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`flex items-center space-x-1 ${
-                  isScrolled ? "text-gray-700 hover:text-church-navy" : "text-white hover:text-church-gold drop-shadow-md"
+                  isScrolled ? "text-church-navy hover:text-church-gold" : "text-white hover:text-church-gold drop-shadow-md"
                 } transition-colors font-medium`}
               >
                 {link.icon}
@@ -66,7 +66,7 @@ const Navbar = () => {
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle Menu"
-              className={isScrolled ? "text-gray-700" : "text-white"}
+              className={isScrolled ? "text-church-navy" : "text-white"}
             >
               <svg
                 className="w-6 h-6"
@@ -102,7 +102,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:bg-gray-100 rounded-md"
+                className="flex items-center space-x-3 py-3 px-4 text-church-navy hover:bg-gray-100 rounded-md"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.icon || <div className="w-5 h-5" />}

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,7 +63,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				church: {
-					'navy': '#1A365D',
+					'navy': '#402a5f',
 					'light-gray': '#F7FAFC',
 					'gold': '#D69E2E',
 					'white': '#FFFFFF',
