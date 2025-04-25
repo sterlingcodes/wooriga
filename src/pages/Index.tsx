@@ -252,7 +252,7 @@ const Index = () => {
       <section 
         className="relative py-20 bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1602353245433-a80ca0499a6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+          backgroundImage: "linear-gradient(rgba(110, 89, 165, 0.9), rgba(110, 89, 165, 0.9)), url('https://images.unsplash.com/photo-1602353245433-a80ca0499a6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
         }}
       >
         <div className="container max-w-4xl mx-auto text-center p-4">

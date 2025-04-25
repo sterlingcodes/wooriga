@@ -175,7 +175,7 @@ const AboutPage = () => {
         className="relative py-20 bg-cover bg-center text-white"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1559825436-299b93e85c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')",
+            "linear-gradient(rgba(110, 89, 165, 0.9), rgba(110, 89, 165, 0.9)), url('https://images.unsplash.com/photo-1559825436-299b93e85c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')",
         }}
       >
         <div className="container max-w-4xl mx-auto text-center p-4">

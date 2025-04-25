@@ -141,7 +141,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              <strong>우리가 교회</strong>는 전통과 현대가 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
+              <strong>우리가 교회</strong>��� 전통과 현대가 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
           
@@ -194,7 +194,7 @@ const WorshipPage = () => {
       </section>
 
       {/* Online Worship */}
-      <section className="py-16 bg-church-navy text-white">
+      <section className="py-16 bg-[#6E59A5] text-white">
         <div className="container max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">온라인 예배</h2>
