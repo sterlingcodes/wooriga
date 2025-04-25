@@ -84,7 +84,19 @@
   @apply text-white font-medium hover:text-church-gold drop-shadow-md;
 }
 
-/* Add semi-transparent overlay for the hero section */
-.hero-overlay {
-  @apply bg-black/40;
+/* Add animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
 }
