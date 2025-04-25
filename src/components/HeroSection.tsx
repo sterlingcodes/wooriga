@@ -2,8 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { MapPin, Clock, Sun, Calendar } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -51,7 +50,7 @@ const HeroSection = () => {
           
           {/* Worship Schedule Info */}
           <div className="absolute bottom-0 left-0 right-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
-            <div className="flex flex-col md:flex-row items-center justify-between px-6 py-4 bg-black/50 backdrop-blur-sm text-white">
+            <div className="flex flex-col md:flex-row items-center justify-between px-6 py-4 text-white backdrop-blur-sm">
               <div className="flex items-center gap-3">
                 <div className="text-church-gold">
                   <Calendar className="h-6 w-6" />
