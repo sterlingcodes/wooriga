@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,7 +23,7 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/b4225ae5-6c32-47b0-9332-eb5855c8831f.png')",
+          backgroundImage: "url('/lovable-uploads/d1654a35-4239-424d-ac42-35b18f1c9c6d.png')",
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}
