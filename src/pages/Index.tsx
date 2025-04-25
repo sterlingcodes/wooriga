@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -21,7 +21,14 @@ const Index = () => {
       {/* Hero Section */}
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
+        style={{ 
+          backgroundImage: "url('/lovable-uploads/288bff16-3ff6-467e-8a4c-ae8abe3dc1da.png')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
       >
+        <div className="absolute inset-0 bg-black/20" />
+        
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
