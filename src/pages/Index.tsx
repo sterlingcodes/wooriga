@@ -22,7 +22,7 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/288bff16-3ff6-467e-8a4c-ae8abe3dc1da.png')",
+          backgroundImage: "url('/lovable-uploads/747067a3-ea4f-468d-80b5-82b122de32c7.png')",
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}
