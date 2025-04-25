@@ -22,7 +22,7 @@ const Index = () => {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
         style={{ 
-          backgroundImage: "url('/lovable-uploads/747067a3-ea4f-468d-80b5-82b122de32c7.png')",
+          backgroundImage: "url('/lovable-uploads/b4225ae5-6c32-47b0-9332-eb5855c8831f.png')",
           backgroundPosition: 'center',
           backgroundSize: 'cover'
         }}
@@ -136,7 +136,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-church-navy mb-4">환영합니다</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            <strong>우리가교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 
+            <strong>우리가교회</strong>는 하나님의 사랑을 전하고 예수 그리스���의 복음을 실천하는 
             믿음의 공동체입니다. 함께 예배하고 성장하는 <strong>우리가교회</strong>에 오신 것을 환영합니다.
           </p>
         </div>
