@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Calendar, MapPin, Book, ArrowRight, Youtube, Church } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AnimatedCross from "@/components/AnimatedCross";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
@@ -19,8 +20,16 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="hero-section relative h-screen flex items-center justify-center text-white">
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center text-white" 
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1481142889578-dda440dacfe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+      >
+        <div className="hero-overlay" />
+        <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
@@ -49,7 +58,6 @@ const Index = () => {
           </p>
         </div>
         
-        {/* Service info section */}
         {isMobile ? (
           <div className="absolute bottom-0 left-0 right-0 mb-16 bg-gradient-to-t from-black to-transparent pb-8 pt-6">
             <div className="container mx-auto px-4">
