@@ -32,15 +32,15 @@ const Index = () => {
         <AnimatedCross />
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
-            <strong>우리가 교회</strong>
+            <strong>우리가교회</strong>
           </h1>
           <div className="mb-8 max-w-3xl mx-auto">
             <p className="text-lg md:text-xl whitespace-pre-line animate-fade-in drop-shadow-md leading-relaxed">
               {`하나님께서는 우리를 성전 삼아주시고,
 성도라 부르셨습니다.
 성도는 교회를 다니는 것이 아니라,
-교회가 되어 가는 것입니다. 그래서 '우리가 교회' 입니다.
-'우리가 교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
+교회가 되어 가는 것입니다. 그래서 '우리가교회' 입니다.
+'우리가교회'는 개혁주의 신앙을 기초로 건강한 교회를 꿈꾸는 공동체입니다.`}
             </p>
           </div>
           
@@ -137,8 +137,8 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-church-navy mb-4">환영합니다</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            <strong>우리가 교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 
-            믿음의 공동체입니다. 함께 예배하고 성장하는 <strong>우리가 교회</strong>에 오신 것을 환영합니다.
+            <strong>우리가교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 
+            믿음의 공동체입니다. 함께 예배하고 성장하는 <strong>우리가교회</strong>에 오신 것을 환영합니다.
           </p>
         </div>
         
@@ -177,7 +177,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">목회자 소개</h3>
               <p className="text-gray-600 mb-4">
-                김은광 목사님과 백승유 목사님이 이끄는 <strong>우리가 교회</strong>의 
+                김은광 목사님과 백승유 목사님이 이끄는 <strong>우리가교회</strong>의 
                 목회 비전과 사역을 소개합니다.
               </p>
               <Button asChild variant="outline" className="w-full">
@@ -200,7 +200,7 @@ const Index = () => {
             <CardContent className="p-6">
               <h3 className="text-xl font-bold mb-2">교회 일정</h3>
               <p className="text-gray-600 mb-4">
-                <strong>우리가 교회</strong>의 다양한 일정과 행사에 대한 정보를 
+                <strong>우리가교회</strong>의 다양한 일정과 행사에 대한 정보를 
                 확인하고 함께 참여해 주세요.
               </p>
               <Button asChild variant="outline" className="w-full">

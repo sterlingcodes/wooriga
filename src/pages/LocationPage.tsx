@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -25,7 +24,7 @@ const LocationPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">오시는 길</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가 교회</strong>를 찾아오시는 방법을 안내해 드립니다
+            <strong>우리가교회</strong>를 찾아오시는 방법을 안내해 드립니다
           </p>
         </div>
       </section>
@@ -41,7 +40,7 @@ const LocationPage = () => {
               <div className="flex items-start mb-4">
                 <MapPin className="h-5 w-5 text-church-gold mr-3 mt-1" />
                 <div>
-                  <p className="font-bold text-lg">우리가 교회</p>
+                  <p className="font-bold text-lg">우리가교회</p>
                   <p>(구)에퀴터블/(현)cbb 은행 빌딩</p>
                   <p>3435 Wilshire Blvd, Suite 570 (5층)</p>
                   <p>Los Angeles, CA 90010</p>
@@ -104,7 +103,7 @@ const LocationPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">주변 환경</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            <strong>우리가 교회</strong> 주변의 편의 시설 및 랜드마크
+            <strong>우리가교회</strong> 주변의 편의 시설 및 랜드마크
           </p>
         </div>
         
@@ -117,7 +116,7 @@ const LocationPage = () => {
             />
             <h3 className="text-xl font-bold mb-2">한인타운 중심부</h3>
             <p className="text-gray-600">
-              <strong>우리가 교회</strong>는 로스앤젤레스 한인타운의 중심부에 위치하고 있습니다. 
+              <strong>우리가교회</strong>는 로스앤젤레스 한인타운의 중심부에 위치하고 있습니다. 
               다양한 한식당, 카페, 쇼핑센터가 도보 거리에 있어 편리합니다.
             </p>
           </div>

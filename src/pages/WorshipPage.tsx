@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -22,10 +21,10 @@ const WorshipPage = () => {
               <Calendar className="h-10 w-10 text-church-gold" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4"><strong>우리가 교회</strong> 예배 안내</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4"><strong>우리가교회</strong> 예배 안내</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가 교회</strong>의 예배 시간과 장소를 안내해 드립니다
+            <strong>우리가교회</strong>의 예배 시간과 장소를 안내해 드립니다
           </p>
         </div>
       </section>
@@ -37,7 +36,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 시간</h2>
             <div className="w-20 h-1 bg-church-gold mb-6"></div>
             <p className="text-lg text-gray-600 mb-8">
-              <strong>우리가 교회</strong>는 매주 다양한 예배를 통해 하나님을 경배하고 
+              <strong>우리가교회</strong>는 매주 다양한 예배를 통해 하나님을 경배하고 
               성도들이 영적으로 성장할 수 있는 기회를 제공합니다.
             </p>
             
@@ -142,7 +141,7 @@ const WorshipPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">예배 특징</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              <strong>우리가 교회</strong>��� 전통과 현대가 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
+              <strong>우리가교회</strong>��� 전통과 현대�� 조화롭게 어우러진 예배를 통해 모든 세대가 함께 하나님을 경배합니다
             </p>
           </div>
           

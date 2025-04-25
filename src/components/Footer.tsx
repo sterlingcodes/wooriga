@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center mb-4">
-              <h3 className="text-xl font-bold">우리가 교회</h3>
+              <h3 className="text-xl font-bold">우리가교회</h3>
               <p className="text-xs opacity-75 ml-2">WOORIGA CHURCH</p>
             </div>
             <p className="text-gray-300 mb-4">
-              하나님의 사랑으로 세상을 섬기는 우리가 교회에 오신 것을 환영합니다.
+              하나님의 사랑으로 세상을 섬기는 우리가교회에 오신 것을 환영합니다.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-          <p>© {currentYear} 우리가 교회 (WOORIGA CHURCH). All rights reserved.</p>
+          <p>© {currentYear} 우리가교회 (WOORIGA CHURCH). All rights reserved.</p>
         </div>
       </div>
     </footer>

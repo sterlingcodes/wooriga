@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -87,7 +86,7 @@ const EventsPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">교회 일정</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가 교회</strong>의 예정된 행사와 모임을 확인하세요
+            <strong>우리가교회</strong>의 예정된 행사와 모임을 확인하세요
           </p>
         </div>
       </section>
@@ -98,7 +97,7 @@ const EventsPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">다가오는 행사</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            <strong>우리가 교회</strong>의 특별 행사와 모임에 여러분을 초대합니다
+            <strong>우리가교회</strong>의 특별 행사와 모임에 여러분을 초대합니다
           </p>
         </div>
         
@@ -131,7 +130,7 @@ const EventsPage = () => {
             <h2 className="text-3xl font-bold text-church-navy mb-4">정기 일정</h2>
             <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              <strong>우리가 교회</strong>의 매주 정기적으로 진행되는 모임 일정입니다
+              <strong>우리가교회</strong>의 매주 정기적으로 진행되는 모임 일정입니다
             </p>
           </div>
           
@@ -197,7 +196,7 @@ const EventsPage = () => {
           <h2 className="text-3xl font-bold text-church-navy mb-4">교회 달력</h2>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            <strong>우리가 교회</strong>의 행사와 모임을 달력에서 확인하세요
+            <strong>우리가교회</strong>의 행사와 모임을 달력에서 확인하세요
           </p>
         </div>
         
