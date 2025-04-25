@@ -259,7 +259,7 @@ const Index = () => {
           <Church className="h-12 w-12 mx-auto mb-4 text-church-gold" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">함께 예배하고 성장해요</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            우리가 교회는 언제나 여러분을 환영합니다. 
+            우리가교회는 언제나 여러분을 환영합니다. 
             함께 하나님을 알아가고 믿음 안에서 성장하는 공동체가 되길 원합니다.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/dfe41c2a-6a34-4de5-9fa6-3cefc368a253.png" 
+              src="/lovable-uploads/82d05857-f668-4d68-afe9-13c2087c767a.png" 
               alt="우리가 교회 로고" 
               className="h-16 w-auto"
             />

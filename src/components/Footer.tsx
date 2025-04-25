@@ -11,8 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center mb-4">
-              <h3 className="text-xl font-bold">우리가교회</h3>
-              <p className="text-xs opacity-75 ml-2">WOORIGA CHURCH</p>
+              <img 
+                src="/lovable-uploads/7c9244d3-bb81-40bc-b6a2-21036bd77238.png" 
+                alt="우리가교회" 
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-4">
               하나님의 사랑으로 세상을 섬기는 우리가교회에 오신 것을 환영합니다.
