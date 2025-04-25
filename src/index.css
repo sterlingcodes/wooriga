@@ -43,6 +43,16 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Aurora variables */
+    --white: rgba(255, 255, 255, 0.6);
+    --black: rgba(0, 0, 0, 0.6);
+    --transparent: rgba(0, 0, 0, 0);
+    --blue-300: rgba(147, 197, 253, 0.6);
+    --blue-400: rgba(96, 165, 250, 0.6);
+    --blue-500: rgba(59, 130, 246, 0.6);
+    --indigo-300: rgba(165, 180, 252, 0.6);
+    --violet-200: rgba(221, 214, 254, 0.6);
   }
 }
 
