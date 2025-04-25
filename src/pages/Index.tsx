@@ -19,16 +19,8 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section 
-        className="relative h-screen flex items-center justify-center text-white"
-        style={{
-          backgroundImage: `url('/lovable-uploads/e5319c10-94d3-4da3-9052-725b0a30c7cf.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <section className="hero-section relative h-screen flex items-center justify-center text-white">
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="container max-w-4xl mx-auto text-center p-4 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             <strong>우리가교회</strong>
