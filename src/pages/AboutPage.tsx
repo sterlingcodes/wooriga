@@ -23,11 +23,8 @@ const AboutPage = () => {
               <Church className="h-10 w-10 text-church-gold" />
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4"><strong>우리가교회</strong> 소개</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">교회 소개</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가교회</strong>는 하나님의 사랑을 전하고 예수 그리스도의 복음을 실천하는 믿음의 공동체입니다.
-          </p>
         </div>
       </section>
 

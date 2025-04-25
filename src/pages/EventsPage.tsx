@@ -85,9 +85,6 @@ const EventsPage = () => {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">교회 일정</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가교회</strong>의 예정된 행사와 모임을 확인하세요
-          </p>
         </div>
       </section>
 

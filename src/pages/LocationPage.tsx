@@ -23,18 +23,15 @@ const LocationPage = () => {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">오시는 길</h1>
           <div className="w-20 h-1 bg-church-gold mx-auto mb-6"></div>
-          <p className="text-xl text-center max-w-3xl mx-auto opacity-90">
-            <strong>우리가교회</strong>를 찾아오시는 방법을 안내해 드립니다
-          </p>
         </div>
       </section>
 
       {/* Map Section */}
       <section className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="text-center md:text-center">
-            <h2 className="text-3xl font-bold text-church-navy mb-4">오시는 길</h2>
-            <div className="w-20 h-1 bg-church-gold mb-6 mx-auto"></div>
+          <div className="text-left">
+            <h2 className="text-3xl font-bold text-church-navy mb-4">우리가교회</h2>
+            <div className="w-20 h-1 bg-church-gold mb-6"></div>
             
             <div className="mb-6">
               <div className="flex items-start mb-4">
