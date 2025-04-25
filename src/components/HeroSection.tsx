@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { MapPin, Clock, Sun } from "lucide-react";
+import { MapPin, Clock, Sun, Calendar } from "lucide-react";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -51,29 +50,46 @@ const HeroSection = () => {
           </p>
           
           {/* Worship Schedule Info */}
-          <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-fade-in" style={{ animationDelay: '1.2s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg flex flex-col md:flex-row gap-4 md:gap-10 text-black">
-              <div className="flex items-center gap-2">
-                <Clock className="text-church-navy" />
-                <div className="text-sm md:text-base">
-                  <p className="font-bold">주일예배</p>
-                  <p>매주 일요일 오전 11시</p>
+          <div className="absolute bottom-0 left-0 right-0 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+            <div className="flex flex-col md:flex-row items-center justify-between px-6 py-4 bg-black/50 backdrop-blur-sm text-white">
+              <div className="flex items-center gap-3">
+                <div className="text-church-gold">
+                  <Calendar className="h-6 w-6" />
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold">주일 예배</p>
+                  <p>1부 9:00am / 2부 11:00am</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-2">
-                <Sun className="text-church-navy" />
-                <div className="text-sm md:text-base">
-                  <p className="font-bold">수요예배</p>
-                  <p>매주 수요일 오후 7시</p>
+              <div className="flex items-center gap-3">
+                <div className="text-church-gold">
+                  <Calendar className="h-6 w-6" />
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold">금요 기도회</p>
+                  <p>매주 금요일 저녁 7:30</p>
                 </div>
               </div>
               
-              <div className="flex items-center gap-2">
-                <MapPin className="text-church-navy" />
-                <div className="text-sm md:text-base">
-                  <p className="font-bold">위치</p>
-                  <p>로스앤젤레스, CA</p>
+              <div className="flex items-center gap-3">
+                <div className="text-church-gold">
+                  <Calendar className="h-6 w-6" />
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold">수요 성경공부</p>
+                  <p>매주 수요일 7:30pm</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <div className="text-church-gold">
+                  <MapPin className="h-6 w-6" />
+                </div>
+                <div className="text-sm">
+                  <p className="font-bold">교회 위치</p>
+                  <p>3435 Wilshire Blvd, Suite 570</p>
+                  <p>Los Angeles, CA 90010</p>
                 </div>
               </div>
             </div>
