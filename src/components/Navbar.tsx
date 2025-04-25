@@ -43,7 +43,6 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
             {navLinks.map((link) => (
               <Link
@@ -59,7 +58,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -95,7 +93,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-lg py-4 px-2 animate-fade-in">
             {navLinks.map((link) => (

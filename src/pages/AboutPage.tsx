@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,8 +16,8 @@ const AboutPage = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      {/* Hero Section - update church name */}
-      <section className="pt-24 pb-12 bg-church-navy text-white">
+      {/* Hero Section */}
+      <section className="pt-24 pb-12 bg-[#6E59A5] text-white">
         <div className="container max-w-6xl mx-auto px-4 pt-10">
           <div className="flex items-center justify-center mb-6">
             <div className="h-20 w-20 rounded-full bg-white/10 flex items-center justify-center">
