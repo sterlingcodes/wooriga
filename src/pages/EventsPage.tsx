@@ -202,7 +202,7 @@ const EventsPage = () => {
         
         <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
           <iframe 
-            src="https://calendar.google.com/calendar/embed?src=woorigachurch%40gmail.com&ctz=America%2FLos_Angeles" 
+            src="https://calendar.google.com/calendar/embed?src=woorigachurch.la%40gmail.com&ctz=America%2FLos_Angeles" 
             style={{ border: 0 }} 
             width="100%" 
             height="600" 

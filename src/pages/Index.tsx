@@ -224,8 +224,8 @@ const Index = () => {
           
           <div className="max-w-2xl mx-auto aspect-video overflow-hidden rounded-lg shadow-lg">
             <iframe
-              src="https://www.youtube.com/embed/videoseries?list=UU6aIZAZw2jti4vvLvyyPNjA"
-              title="우리가 교회 YouTube Channel"
+              src="https://www.youtube.com/embed/4q2rZqlWotg"
+              title="우리가교회 YouTube Channel"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
@@ -235,7 +235,7 @@ const Index = () => {
           <div className="text-center mt-8">
             <Button asChild variant="outline" className="bg-white">
               <a 
-                href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
+                href="https://www.youtube.com/@WoorigaChurchLA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center"
@@ -256,7 +256,11 @@ const Index = () => {
         }}
       >
         <div className="container max-w-4xl mx-auto text-center p-4">
-          <Church className="h-12 w-12 mx-auto mb-4 text-church-gold" />
+          <img 
+            src="/lovable-uploads/2e188386-b03d-4b8e-b3a6-8586bceeaccd.png"
+            alt="우리가교회" 
+            className="h-12 w-auto mx-auto mb-4"
+          />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">함께 예배하고 성장해요</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             우리가교회는 언제나 여러분을 환영합니다. 

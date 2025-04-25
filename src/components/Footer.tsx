@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.youtube.com/channel/UC6aIZAZw2jti4vvLvyyPNjA" 
+                href="https://www.youtube.com/@WoorigaChurchLA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-red-500 transition-colors text-red-600"
