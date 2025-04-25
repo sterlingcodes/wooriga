@@ -36,10 +36,11 @@ const Navbar = () => {
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <div>
-              <h1 className={`text-xl font-bold ${isScrolled ? "text-church-navy" : "text-white drop-shadow-md"}`}>우리가 교회</h1>
-              <p className={`text-xs ${isScrolled ? "text-gray-500" : "text-white/90 drop-shadow-md"}`}>WOORIGA CHURCH</p>
-            </div>
+            <img 
+              src="/lovable-uploads/dfe41c2a-6a34-4de5-9fa6-3cefc368a253.png" 
+              alt="우리가 교회 로고" 
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}

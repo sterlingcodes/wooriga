@@ -137,6 +137,11 @@ const AboutPage = () => {
           <Card className="bg-white shadow-md">
             <CardContent className="p-6">
               <div className="mb-4">
+                <img
+                  src="/lovable-uploads/2990febd-d68b-4e49-9cfb-5208c033a9e8.png"
+                  alt="백승유 목사"
+                  className="w-48 h-auto mx-auto mb-4 rounded-lg"
+                />
                 <h3 className="text-xl font-bold mb-2">백승유 목사 (Southwestern Baptist)</h3>
                 <p className="text-gray-600">
                   백승유 목사님은 <strong>우리가 교회</strong>의 목사님으로, 은혜로운 예배 인도와 찬양 리더십으로 성도들의 예배를 풍성하게 이끌고 계십니다. 
@@ -158,7 +163,7 @@ const AboutPage = () => {
         <div className="text-center max-w-4xl mx-auto text-gray-600">
           <p className="mb-4">
             정희경 전도사(새가족), 김폴 선교사(선교,시설),<br />
-            박크리스틴 집사(주일학교 디렉터) 허지애 간사(찬양)<br />
+            박크리스틴 집사(주일학교 디렉터)<br />
             박종호, 김기전, 김윤성, ​이창록 장로<br />
             후원선교: 임태호/이선화 선교사(태국). ​미​주복음방송
           </p>
