@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { MapPin, Clock, Sun } from "lucide-react";
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -15,8 +16,8 @@ const HeroSection = () => {
         alt="우리가교회 Hero"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ 
-          objectPosition: isMobile ? "85% center" : "center center",
-          transform: isMobile ? "scale(1.2)" : "none"
+          objectPosition: isMobile ? "right center" : "center center",
+          transform: isMobile ? "scale(1)" : "none"
         }}
       />
       <div className="absolute inset-0 bg-black/20" />
@@ -48,6 +49,35 @@ const HeroSection = () => {
           <p className="text-2xl md:text-3xl font-serif italic text-[#402a5f] animate-fade-in" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
             여호와로 인하여 기뻐하는 것이 너희의 힘이니라
           </p>
+          
+          {/* Worship Schedule Info */}
+          <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-fade-in" style={{ animationDelay: '1.2s' }}>
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg flex flex-col md:flex-row gap-4 md:gap-10 text-black">
+              <div className="flex items-center gap-2">
+                <Clock className="text-church-navy" />
+                <div className="text-sm md:text-base">
+                  <p className="font-bold">주일예배</p>
+                  <p>매주 일요일 오전 11시</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <Sun className="text-church-navy" />
+                <div className="text-sm md:text-base">
+                  <p className="font-bold">수요예배</p>
+                  <p>매주 수요일 오후 7시</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <MapPin className="text-church-navy" />
+                <div className="text-sm md:text-base">
+                  <p className="font-bold">위치</p>
+                  <p>로스앤젤레스, CA</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
