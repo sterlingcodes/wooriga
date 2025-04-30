@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,7 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Loader2 } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
   useEffect(() => {
@@ -20,28 +22,120 @@ const ContactPage = () => {
     phone: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [emailjsConfig, setEmailjsConfig] = useState({
+    serviceId: "",
+    templateId: "",
+    userId: "",
+    configured: false
+  });
+
+  // Check if Email.js is configured
+  useEffect(() => {
+    const savedConfig = localStorage.getItem('emailjsConfig');
+    if (savedConfig) {
+      try {
+        const config = JSON.parse(savedConfig);
+        setEmailjsConfig({
+          serviceId: config.serviceId,
+          templateId: config.templateId,
+          userId: config.userId,
+          configured: true
+        });
+      } catch (error) {
+        console.error("Failed to parse saved EmailJS config", error);
+      }
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleConfigChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setEmailjsConfig(prev => ({ ...prev, [name]: value }));
+  };
+
+  const saveConfig = (e: React.FormEvent) => {
     e.preventDefault();
+    const { serviceId, templateId, userId } = emailjsConfig;
     
-    console.log("Form submitted:", formData);
+    if (!serviceId || !templateId || !userId) {
+      toast({
+        title: "설정 오류",
+        description: "모든 EmailJS 설정 필드를 채워주세요.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    localStorage.setItem('emailjsConfig', JSON.stringify({
+      serviceId,
+      templateId,
+      userId
+    }));
+    
+    setEmailjsConfig(prev => ({ ...prev, configured: true }));
     
     toast({
-      title: "메시지가 전송되었습니다",
-      description: "빠른 시일 내에 답변 드리겠습니다.",
+      title: "설정이 저장되었습니다",
+      description: "이메일 설정이 성공적으로 저장되었습니다.",
     });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: ""
-    });
+    if (!emailjsConfig.configured) {
+      toast({
+        title: "EmailJS가 설정되지 않았습니다",
+        description: "메시지를 받으려면 EmailJS를 설정하세요.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        reply_to: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      };
+      
+      await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        templateParams,
+        emailjsConfig.userId
+      );
+      
+      toast({
+        title: "메시지가 전송되었습니다",
+        description: "빠른 시일 내에 답변 드리겠습니다.",
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "메시지 전송 실패",
+        description: "메시지를 보내는 중 오류가 발생했습니다. 나중에 다시 시도하세요.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -108,6 +202,66 @@ const ContactPage = () => {
               빠른 시일 내에 답변 드리겠습니다.
             </p>
             
+            {/* EmailJS Configuration Form */}
+            {!emailjsConfig.configured && (
+              <Card className="mb-6 border-yellow-300 bg-yellow-50">
+                <CardContent className="pt-6">
+                  <h3 className="text-lg font-medium text-yellow-800 mb-2">EmailJS 설정</h3>
+                  <p className="text-sm text-yellow-700 mb-4">
+                    이메일을 받으려면 EmailJS 계정을 설정하세요. <a href="https://www.emailjs.com/docs/sdk/installation/" target="_blank" rel="noopener noreferrer" className="underline">EmailJS 문서 확인하기</a>
+                  </p>
+                  <form onSubmit={saveConfig} className="space-y-3">
+                    <div>
+                      <label htmlFor="serviceId" className="block text-sm font-medium text-gray-700 mb-1">
+                        Service ID
+                      </label>
+                      <Input
+                        id="serviceId"
+                        name="serviceId"
+                        value={emailjsConfig.serviceId}
+                        onChange={handleConfigChange}
+                        required
+                        placeholder="예: service_xxxxxxx"
+                        className="w-full"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="templateId" className="block text-sm font-medium text-gray-700 mb-1">
+                        Template ID
+                      </label>
+                      <Input
+                        id="templateId"
+                        name="templateId"
+                        value={emailjsConfig.templateId}
+                        onChange={handleConfigChange}
+                        required
+                        placeholder="예: template_xxxxxxx"
+                        className="w-full"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="userId" className="block text-sm font-medium text-gray-700 mb-1">
+                        User ID (Public Key)
+                      </label>
+                      <Input
+                        id="userId"
+                        name="userId"
+                        value={emailjsConfig.userId}
+                        onChange={handleConfigChange}
+                        required
+                        placeholder="예: user_xxxxxxxxx"
+                        className="w-full"
+                      />
+                    </div>
+                    <Button type="submit" className="bg-yellow-600 hover:bg-yellow-700 text-white">
+                      설정 저장
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            )}
+            
+            {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -166,8 +320,19 @@ const ContactPage = () => {
                 />
               </div>
               
-              <Button type="submit" className="bg-church-navy hover:bg-blue-900">
-                메시지 보내기
+              <Button 
+                type="submit" 
+                className="bg-church-navy hover:bg-blue-900"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    전송 중...
+                  </>
+                ) : (
+                  "메시지 보내기"
+                )}
               </Button>
             </form>
           </div>
