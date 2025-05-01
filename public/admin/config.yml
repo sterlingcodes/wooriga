@@ -1,1 +1,18 @@
-public/admin/config.yml yml backend: name: git-gateway branch: main media_folder: "public/img/uploads" # files go here in repo public_folder: "/img/uploads" # path the site uses collections: - name: "pages" label: "Site Pages" files: - file: "src/pages/Home.jsx" label: "홈" name: "home" fields: - { label: "Title", name: "title", widget: "string" } - { label: "Hero Text", name: "heroText", widget: "text" } - { label: "Hero Image", name: "heroImage", widget: "image" }
+backend:
+  name: git-gateway
+  branch: main            # Netlify deploy branch
+
+media_folder: "public/img/uploads"   # where images are saved in the repo
+public_folder: "/img/uploads"        # how the site references those images
+
+collections:
+  - name: "pages"         # internal id
+    label: "Site Pages"   # what editors see in CMS
+    files:
+      - file: "src/pages/Home.jsx"
+        label: "홈"
+        name: "home"
+        fields:
+          - { label: "Title",      name: "title",      widget: "string" }
+          - { label: "Hero Text",  name: "heroText",   widget: "text" }
+          - { label: "Hero Image", name: "heroImage",  widget: "image" }
